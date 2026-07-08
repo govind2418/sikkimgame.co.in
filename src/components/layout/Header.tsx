@@ -25,10 +25,10 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <CtaButton href="/login" external={false} variant="ghost" size="md" showArrow={false} className="hidden sm:inline-flex">
+          <CtaButton href={SITE.registerUrl} variant="ghost" size="md" showArrow={false} className="hidden sm:inline-flex">
             Login
           </CtaButton>
-          <CtaButton href="/register" external={false} variant="primary" size="md" showArrow={false}>
+          <CtaButton href={SITE.registerUrl} variant="primary" size="md" showArrow={false}>
             Register
           </CtaButton>
         </div>

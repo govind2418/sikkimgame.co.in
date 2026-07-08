@@ -1,6 +1,7 @@
 import { CtaButton } from '@/components/ui/Button';
 import { PhoneMockup } from './PhoneMockup';
 import { ShieldIcon, ZapIcon, StarIcon } from '@/components/icons';
+import { SITE } from '@/lib/site';
 
 export function Hero() {
   return (
@@ -19,9 +20,7 @@ export function Hero() {
             rounds actually work — explained simply, before you head to the official app.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <CtaButton href="/register" external={false} size="lg">
-              Register Now
-            </CtaButton>
+            <CtaButton href={SITE.registerUrl} size="lg">Register Now</CtaButton>
             <CtaButton href="/download" external={false} variant="secondary" size="lg">
               Download App
             </CtaButton>

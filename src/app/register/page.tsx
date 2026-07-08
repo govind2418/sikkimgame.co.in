@@ -9,13 +9,14 @@ import { CtaBand } from '@/components/home/CtaBand';
 import { CtaButton } from '@/components/ui/Button';
 import { UserPlusIcon, TicketIcon } from '@/components/icons';
 import { registerFaqs, registerSteps } from '@/lib/content/register';
+import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Sikkim Game Register — Create Your Account in Minutes',
   description:
     'Step-by-step Sikkim Game registration guide: what details you need, how invite codes work, and how to sign up safely on the official platform.',
   path: '/register',
-  keywords: ['Sikkim Game Register', 'Sikkim Game Sign Up', 'Sikkim Game New Account'],
+  keywords: ['Sikkim Game Register', 'Sikkim Register', 'Sikkim Game Sign Up', 'Sikkim Game New Account'],
 });
 
 export default function RegisterPage() {
@@ -25,7 +26,7 @@ export default function RegisterPage() {
       <PageHero
         eyebrow="Sikkim Game Register"
         title="Sikkim Game Register: Create Your Account the Right Way"
-        intro="New to Sikkim Game? This guide covers exactly what information you need, how the sign-up flow works, and how to use an invite code if you have one."
+        intro="New to Sikkim Game — also searched as Sikkim Register? This guide covers exactly what information you need, how the sign-up flow works, and how to use an invite code if you have one."
       />
 
       <Section>
@@ -44,7 +45,7 @@ export default function RegisterPage() {
           ))}
         </div>
         <div className="mt-8 flex flex-wrap gap-3">
-          <CtaButton variant="primary" size="lg">
+          <CtaButton href={SITE.registerUrl} variant="primary" size="lg">
             <UserPlusIcon className="h-4 w-4" /> Register Now
           </CtaButton>
           <CtaButton href="/invite-code" external={false} variant="secondary" size="lg">

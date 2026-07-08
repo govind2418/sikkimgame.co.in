@@ -9,6 +9,7 @@ import { CtaBand } from '@/components/home/CtaBand';
 import { CtaButton } from '@/components/ui/Button';
 import { TicketIcon, ShieldIcon, UsersIcon } from '@/components/icons';
 import { inviteCodeFaqs } from '@/lib/content/inviteCode';
+import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Sikkim Game Invite Code — How It Works & Where to Enter It',
@@ -57,7 +58,7 @@ export default function InviteCodePage() {
           </Card>
         </div>
         <div className="mt-8 flex flex-wrap gap-3">
-          <CtaButton href="/register" external={false} variant="primary" size="lg">
+          <CtaButton href={SITE.registerUrl} variant="primary" size="lg">
             Register &amp; Add Invite Code
           </CtaButton>
           <CtaButton href="/gift-code" external={false} variant="secondary" size="lg">

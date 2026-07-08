@@ -9,15 +9,27 @@ type BuildMetadataArgs = {
   ogTitle?: string;
 };
 
+const BASE_KEYWORDS = [
+  'Sikkim Game',
+  'Sikkim Game Login',
+  'Sikkim Game Register',
+  'Sikkim Login',
+  'Sikkim Register',
+  'Sikkim Game Download',
+  'Sikkim Game APK',
+  'Sikkim Game App',
+];
+
 export function buildMetadata({ title, description, path, keywords, ogTitle }: BuildMetadataArgs): Metadata {
   const url = `${SITE.url}${path}`;
   const fullTitle = path === '/' ? title : `${title} | ${SITE.name}`;
   const ogImageUrl = `${SITE.url}/og?title=${encodeURIComponent(ogTitle ?? title)}`;
+  const allKeywords = Array.from(new Set([...(keywords ?? []), ...BASE_KEYWORDS]));
 
   return {
     title: { absolute: fullTitle },
     description,
-    keywords: keywords?.join(', '),
+    keywords: allKeywords.join(', '),
     alternates: {
       canonical: url,
     },

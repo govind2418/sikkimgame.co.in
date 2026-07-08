@@ -40,7 +40,7 @@ export function Footer() {
           <strong className="text-slate-300">Disclaimer:</strong> {DISCLAIMER}
         </div>
 
-        <p className="mt-6 text-center text-xs text-slate-500">
+        <p className="mt-6 text-center text-xs text-slate-400">
           &copy; {new Date().getFullYear()} {SITE.name}. All rights reserved.
         </p>
       </div>

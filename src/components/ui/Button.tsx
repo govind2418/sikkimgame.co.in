@@ -26,6 +26,7 @@ type CtaButtonProps = {
   children: React.ReactNode;
   external?: boolean;
   showArrow?: boolean;
+  ariaLabel?: string;
 };
 
 export function CtaButton({
@@ -36,12 +37,13 @@ export function CtaButton({
   children,
   external = true,
   showArrow = true,
+  ariaLabel,
 }: CtaButtonProps) {
   const classes = `inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 active:scale-95 ${variantClasses[variant]} ${sizeClasses[size]} ${className}`;
 
   if (external) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer sponsored" className={classes}>
+      <a href={href} target="_blank" rel="noopener noreferrer sponsored" aria-label={ariaLabel} className={classes}>
         {children}
         {showArrow && <ArrowRightIcon className="h-4 w-4" />}
       </a>
@@ -49,7 +51,7 @@ export function CtaButton({
   }
 
   return (
-    <Link href={href} className={classes}>
+    <Link href={href} aria-label={ariaLabel} className={classes}>
       {children}
       {showArrow && <ArrowRightIcon className="h-4 w-4" />}
     </Link>

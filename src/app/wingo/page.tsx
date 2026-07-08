@@ -16,7 +16,7 @@ export const metadata: Metadata = buildMetadata({
   description:
     'Learn how Sikkim Game Wingo works: number, colour and size betting explained, round timers, and responsible play tips.',
   path: '/wingo',
-  keywords: ['Sikkim Game Wingo', 'Sikkim Game Wingo Game'],
+  keywords: ['Sikkim Game Wingo', 'Sikkim Wingo', 'Sikkim Game Wingo Game'],
 });
 
 export default function WingoPage() {

@@ -13,7 +13,7 @@ export function WingoBoardIllustration() {
           </span>
         ))}
       </div>
-      <p className="mt-4 text-center text-[11px] text-slate-500">
+      <p className="mt-4 text-center text-[11px] text-slate-400">
         Illustrative example only — actual Wingo number sets and timers are set by the official app.
       </p>
     </div>

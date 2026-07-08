@@ -16,7 +16,7 @@ export function ColourWheelIllustration() {
           <span className="text-xs font-medium text-slate-300">{colour.name}</span>
         </div>
       ))}
-      <p className="col-span-3 mt-1 text-center text-[11px] text-slate-500">
+      <p className="col-span-3 mt-1 text-center text-[11px] text-slate-400">
         Illustrative example only — actual colour sets and payout rules are set by the official app.
       </p>
     </div>

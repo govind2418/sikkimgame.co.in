@@ -10,6 +10,7 @@ import { CtaBand } from '@/components/home/CtaBand';
 import { CtaButton } from '@/components/ui/Button';
 import { DownloadIcon, ShieldIcon, SmartphoneIcon } from '@/components/icons';
 import { downloadFaqs, downloadSteps } from '@/lib/content/download';
+import { SITE } from '@/lib/site';
 import appIcon from '../../../public/images/brand/app-icon-512.png';
 
 export const metadata: Metadata = buildMetadata({
@@ -51,7 +52,7 @@ export default function DownloadPage() {
               <CtaButton variant="primary" size="lg">
                 <DownloadIcon className="h-4 w-4" /> Download APK
               </CtaButton>
-              <CtaButton href="/register" external={false} variant="secondary" size="lg">
+              <CtaButton href={SITE.registerUrl} variant="secondary" size="lg">
                 Register After Install
               </CtaButton>
             </div>

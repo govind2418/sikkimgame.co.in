@@ -16,7 +16,7 @@ export const metadata: Metadata = buildMetadata({
   description:
     'A plain-language guide to Sikkim Game Colour Prediction: how rounds work, payout basics, and important scam warnings before you play.',
   path: '/colour-prediction',
-  keywords: ['Sikkim Game Colour Prediction', 'Sikkim Game Colour Game'],
+  keywords: ['Sikkim Game Colour Prediction', 'Sikkim Colour Prediction', 'Sikkim Game Colour Game'],
 });
 
 export default function ColourPredictionPage() {

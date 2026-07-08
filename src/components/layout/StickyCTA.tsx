@@ -1,5 +1,6 @@
 import { CtaButton } from '@/components/ui/Button';
 import { DownloadIcon, UserPlusIcon } from '@/components/icons';
+import { SITE } from '@/lib/site';
 
 export function StickyCTA() {
   return (
@@ -15,7 +16,7 @@ export function StickyCTA() {
           <DownloadIcon className="h-4 w-4" />
           Download
         </CtaButton>
-        <CtaButton href="/register" external={false} variant="primary" className="flex-1" showArrow={false}>
+        <CtaButton href={SITE.registerUrl} variant="primary" className="flex-1" showArrow={false}>
           <UserPlusIcon className="h-4 w-4" />
           Register Now
         </CtaButton>

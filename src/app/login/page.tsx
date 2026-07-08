@@ -9,13 +9,14 @@ import { CtaBand } from '@/components/home/CtaBand';
 import { CtaButton } from '@/components/ui/Button';
 import { LoginIcon, ShieldIcon } from '@/components/icons';
 import { loginFaqs, loginSteps } from '@/lib/content/login';
+import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Sikkim Game Login — Step-by-Step Sign In Guide',
   description:
     'Learn how to log in to Sikkim Game quickly and safely. Fix common login errors and find the official login link for app and web.',
   path: '/login',
-  keywords: ['Sikkim Game Login', 'Sikkim Game Sign In', 'Sikkim Game Account'],
+  keywords: ['Sikkim Game Login', 'Sikkim Login', 'Sikkim Game Sign In', 'Sikkim Game Account'],
 });
 
 export default function LoginPage() {
@@ -25,7 +26,7 @@ export default function LoginPage() {
       <PageHero
         eyebrow="Sikkim Game Login"
         title="Sikkim Game Login: How to Sign In the Right Way"
-        intro="Signing in to Sikkim Game only takes a few seconds once you know the correct steps. This guide walks you through logging in, fixing common errors, and keeping your account secure."
+        intro="Signing in to Sikkim Game — sometimes searched simply as Sikkim Login — only takes a few seconds once you know the correct steps. This guide walks you through logging in, fixing common errors, and keeping your account secure."
       />
 
       <Section>
@@ -44,10 +45,10 @@ export default function LoginPage() {
           ))}
         </div>
         <div className="mt-8 flex flex-wrap gap-3">
-          <CtaButton variant="primary" size="lg">
+          <CtaButton href={SITE.registerUrl} variant="primary" size="lg">
             <LoginIcon className="h-4 w-4" /> Go to Login
           </CtaButton>
-          <CtaButton href="/register" external={false} variant="secondary" size="lg">
+          <CtaButton href={SITE.registerUrl} variant="secondary" size="lg">
             Need an account? Register
           </CtaButton>
         </div>

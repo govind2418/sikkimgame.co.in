@@ -30,6 +30,25 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: 'UWWFC1BQhro8tzO6aD8DLvQj8PmuxS51nr4qoZzWchM',
+  },
+  keywords: [
+    'Sikkim Game',
+    'Sikkim Game Login',
+    'Sikkim Game Register',
+    'Sikkim Login',
+    'Sikkim Register',
+    'Sikkim Game Download',
+    'Sikkim Game APK',
+    'Sikkim Game App',
+    'Sikkim Game Invite Code',
+    'Sikkim Game Gift Code',
+    'Sikkim Game Colour Prediction',
+    'Sikkim Game Wingo',
+    'Sikkim Colour Prediction',
+    'Sikkim Wingo',
+  ],
 };
 
 export const viewport = {

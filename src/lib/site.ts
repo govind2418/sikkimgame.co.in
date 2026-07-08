@@ -6,6 +6,7 @@ export const SITE = {
   description:
     'Independent information hub for Sikkim Game — login, register, APK download, invite codes, gift codes, Wingo and Colour Prediction guides.',
   officialUrl: 'https://sikkimgg.live/#/',
+  registerUrl: 'https://sikkimgg.live/#/register?invitationCode=448445788742',
   contactEmail: 'support@sikkimgame.in.net',
   twitterHandle: '@sikkimgameinfo',
   themeColor: '#0a1024',
@@ -29,8 +30,8 @@ export const NAV_LINKS: NavLink[] = [
 
 export const FOOTER_LINKS: NavLink[] = [
   { label: 'Home', href: '/' },
-  { label: 'Login', href: '/login' },
-  { label: 'Register', href: '/register' },
+  { label: 'Sikkim Game Login', href: '/login' },
+  { label: 'Sikkim Game Register', href: '/register' },
   { label: 'Download App', href: '/download' },
   { label: 'Invite Code', href: '/invite-code' },
   { label: 'Gift Code', href: '/gift-code' },
