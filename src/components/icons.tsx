@@ -164,6 +164,53 @@ export function CoinsIcon({ className }: IconProps) {
   );
 }
 
+export function PercentIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M19 5 5 19" />
+      <circle cx="7" cy="7" r="2.4" />
+      <circle cx="17" cy="17" r="2.4" />
+    </svg>
+  );
+}
+
+export function FileTextIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" />
+      <path d="M14 3v5h5" />
+      <path d="M9 13h6M9 17h6" />
+    </svg>
+  );
+}
+
+export function AlertTriangleIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M12 3 2 20h20L12 3Z" />
+      <path d="M12 10v4" />
+      <circle cx="12" cy="17" r="0.6" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export function BookOpenIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M4 5.5C6 4.5 9 4.5 12 6c3-1.5 6-1.5 8-.5v13c-2-1-5-1-8 .5-3-1.5-6-1.5-8-.5Z" />
+      <path d="M12 6v13" />
+    </svg>
+  );
+}
+
+export function QuoteIcon({ className }: IconProps) {
+  return (
+    <svg {...base} fill="currentColor" stroke="none" viewBox="0 0 24 24" className={className}>
+      <path d="M9.5 6C6.5 7.2 5 9.4 5 12.2c0 2.1 1.3 3.5 3 3.5 1.6 0 2.8-1.2 2.8-2.7 0-1.4-1-2.5-2.3-2.6.3-1.4 1.4-2.6 3-3.3L9.5 6Zm8 0c-3 1.2-4.5 3.4-4.5 6.2 0 2.1 1.3 3.5 3 3.5 1.6 0 2.8-1.2 2.8-2.7 0-1.4-1-2.5-2.3-2.6.3-1.4 1.4-2.6 3-3.3L17.5 6Z" />
+    </svg>
+  );
+}
+
 export function UsersIcon({ className }: IconProps) {
   return (
     <svg {...base} className={className}>

@@ -2,28 +2,28 @@ import type { FaqItem } from '@/lib/schema';
 
 export const giftCodeFaqs: FaqItem[] = [
   {
-    question: 'What is a Sikkim Game gift code?',
+    question: 'What counts as a gift code here?',
     answer:
-      'A gift code (sometimes called a redeem code) is a short code that unlocks a specific reward — such as bonus credit — when entered in the app\'s redemption or rewards section.',
+      'A short redeem code — sometimes called a reward code — that credits a specific bonus once entered correctly in the app\'s redemption section.',
   },
   {
-    question: 'Where do I redeem a Sikkim Game gift code?',
+    question: 'Where do I actually enter one?',
     answer:
-      'Log in to the official app, go to the Rewards, Promotions, or Redeem Code section (naming varies by version), enter the code exactly as given, and confirm.',
+      'Sign in, then look under Rewards, Promotions or Redeem Code (exact naming shifts between app versions). Paste the code exactly as given and confirm.',
   },
   {
-    question: 'Why is my gift code not working?',
+    question: 'My code says invalid or expired — why?',
     answer:
-      'Gift codes usually expire after a set time or a limited number of uses. Double-check for typos, extra spaces, or capitalisation, and confirm the code hasn\'t already been claimed or expired.',
+      'Check for stray spaces or wrong capitalisation first. Beyond that, most codes carry an expiry date or a maximum number of redemptions, and once either limit is hit the code simply stops working.',
   },
   {
-    question: 'Are Sikkim Game gift codes free?',
+    question: 'Should a gift code ever cost money?',
     answer:
-      'Yes. Legitimate gift codes are free to redeem. If anyone asks you to pay money or share your password/OTP to "unlock" a gift code, that is a scam — do not proceed.',
+      'Never. Redemption is free by definition. Anyone asking for payment, your password, or an OTP to "activate" a code is running a scam — stop immediately.',
   },
   {
-    question: 'Where can I find new gift codes?',
+    question: 'Where do genuine codes get posted?',
     answer:
-      'Official promotional channels and in-app notifications are the most reliable sources. Be cautious with codes from unverified pages, and never enter sensitive account details to "verify" a code.',
+      'Official in-app notifications and verified promotional channels are the safest sources. Treat codes from random forwards or unfamiliar pages with real suspicion.',
   },
 ];

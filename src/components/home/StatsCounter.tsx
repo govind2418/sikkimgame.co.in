@@ -1,10 +1,10 @@
 import { Counter } from '@/components/ui/Counter';
 
 const stats = [
-  { target: 12, suffix: '+', label: 'Dedicated Guides' },
-  { target: 100, suffix: '%', label: 'Independent Content' },
-  { target: 24, suffix: '/7', label: 'Guides Available' },
-  { target: 5, suffix: ' min', label: 'Quick Setup Read' },
+  { target: 19, suffix: '+', label: 'In-Depth Guides' },
+  { target: 100, suffix: '%', label: 'Independent, Unpaid Reviews' },
+  { target: 3, suffix: ' min', label: 'Avg. Read to Get Set Up' },
+  { target: 24, suffix: '/7', label: 'Guides Online' },
 ];
 
 export function StatsCounter() {

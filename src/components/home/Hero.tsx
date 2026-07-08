@@ -1,6 +1,6 @@
 import { CtaButton } from '@/components/ui/Button';
 import { PhoneMockup } from './PhoneMockup';
-import { ShieldIcon, ZapIcon, StarIcon } from '@/components/icons';
+import { ZapIcon, ShieldIcon, BookOpenIcon } from '@/components/icons';
 import { SITE } from '@/lib/site';
 
 export function Hero() {
@@ -9,31 +9,31 @@ export function Hero() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:py-20 lg:grid-cols-2 lg:items-center lg:gap-8">
         <div className="animate-fadeIn">
           <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-neon-400/30 bg-neon-400/5 px-4 py-1.5 text-xs font-semibold text-neon-300">
-            Independent Sikkim Game Info Hub
+            sikkimgame.co.in — reader-run guide hub
           </p>
           <h1 className="text-4xl font-extrabold leading-tight text-white sm:text-5xl">
-            Sikkim Game — Login, Register &amp; Play Wingo and Colour Prediction
+            Your quick-start desk for Sikkim Game
           </h1>
           <p className="mt-5 max-w-xl text-lg text-slate-300">
-            Everything you need for Sikkim Game in one place: quick login and register steps,
-            APK download links, invite &amp; gift code guides, and how Wingo and Colour Prediction
-            rounds actually work — explained simply, before you head to the official app.
+            One clean stop for sign-in help, APK setup, bonus and invite codes, and honest
+            explainers on how Wingo and Colour Prediction rounds are actually structured —
+            written before you ever open the official app, not after.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <CtaButton href={SITE.registerUrl} size="lg">Register Now</CtaButton>
-            <CtaButton href="/download" external={false} variant="secondary" size="lg">
-              Download App
+            <CtaButton href={SITE.registerUrl} size="lg">Create Account</CtaButton>
+            <CtaButton href="/how-to-download" external={false} variant="secondary" size="lg">
+              How to Download
             </CtaButton>
           </div>
           <div className="mt-8 flex flex-wrap gap-6 text-sm text-slate-400">
             <span className="flex items-center gap-2">
-              <ZapIcon className="h-4 w-4 text-neon-400" /> Fast, lightweight guides
+              <ZapIcon className="h-4 w-4 text-neon-400" /> No clutter, no autoplay ads
             </span>
             <span className="flex items-center gap-2">
-              <ShieldIcon className="h-4 w-4 text-neon-400" /> Independent &amp; transparent
+              <ShieldIcon className="h-4 w-4 text-neon-400" /> Clearly independent
             </span>
             <span className="flex items-center gap-2">
-              <StarIcon className="h-4 w-4 text-neon-400" /> Updated regularly
+              <BookOpenIcon className="h-4 w-4 text-neon-400" /> Refreshed regularly
             </span>
           </div>
         </div>

@@ -9,9 +9,9 @@ import { privacyFaqs, privacySections } from '@/lib/content/privacy';
 export const metadata: Metadata = buildMetadata({
   title: 'Privacy Policy',
   description:
-    'Read the sikkimgame.in.net privacy policy: what information we collect, how cookies are used, and how third-party links are handled.',
+    'How sikkimgame.co.in handles visitor data: what we collect, cookie use, and how outbound links to the official platform are treated.',
   path: '/privacy-policy',
-  keywords: ['Sikkim Game Privacy Policy'],
+  keywords: ['Sikkim Game Zone Privacy Policy'],
 });
 
 export default function PrivacyPolicyPage() {
@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
       <PageHero
         eyebrow="Legal"
         title="Privacy Policy"
-        intro="Last updated: this page explains how sikkimgame.in.net handles visitor information. It does not cover the official Sikkim Game operator's app or platform."
+        intro="How sikkimgame.co.in handles visitor information. This page does not cover the official Sikkim Game operator's own app or platform."
       />
 
       <Section>
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
       </Section>
 
       <Section id="faq" className="border-t border-white/5 bg-navy-900/40">
-        <SectionHeading eyebrow="FAQs" title="Privacy Policy — Frequently Asked Questions" />
+        <SectionHeading eyebrow="FAQs" title="Privacy Policy — frequently asked questions" />
         <FaqAccordion items={privacyFaqs} />
       </Section>
     </>

@@ -2,57 +2,57 @@ import type { FaqItem } from '@/lib/schema';
 
 export const termsFaqs: FaqItem[] = [
   {
-    question: 'Does using this website mean I agree to these terms?',
+    question: 'Does browsing this site mean I accept these terms?',
     answer:
-      'Yes, browsing and using sikkimgame.in.net means you accept these Terms & Conditions. If you do not agree, please discontinue using this site.',
+      'Yes — using sikkimgame.co.in means you accept these Terms & Conditions. If you disagree, please stop using the site.',
   },
   {
-    question: 'Do these terms cover the official Sikkim Game app?',
+    question: 'Do these terms apply to the official Sikkim Game app too?',
     answer:
-      'No. These terms cover only sikkimgame.in.net. The official operator\'s app or website has its own separate terms of service that govern account use, deposits, gameplay and withdrawals.',
+      'No, only to this website. The official operator has its own separate terms governing accounts, deposits, gameplay and withdrawals.',
   },
   {
-    question: 'Can I copy content from this site?',
+    question: 'Can I reuse content from this site elsewhere?',
     answer:
-      'Our original written guides are provided for personal reading. Please do not republish our content elsewhere without permission.',
+      'Our guides are written for personal reading here. Please don\'t republish them without our permission.',
   },
 ];
 
 export const termsSections = [
   {
-    title: '1. Acceptance of terms',
-    body: 'By accessing sikkimgame.in.net, you agree to these Terms & Conditions. If you disagree with any part, please stop using this site.',
+    title: '1. Accepting these terms',
+    body: 'By using sikkimgame.co.in, you agree to these Terms & Conditions in full. If any part is unacceptable to you, please discontinue use of the site.',
   },
   {
-    title: '2. Nature of this website',
-    body: 'This site is an independent, unofficial information and affiliate resource covering Sikkim Game topics such as login, registration, downloads, invite/gift codes, and game rules. We are not the game developer, operator, or a government entity, and we do not process registrations, deposits, or withdrawals.',
+    title: '2. What this site is',
+    body: 'An independent, unofficial resource covering Sikkim Game topics — sign-in, sign-up, downloads, bonus/invite/gift codes, and game-mode explainers. We are not the developer, operator, or any government entity, and we never process registrations, deposits or withdrawals.',
   },
   {
-    title: '3. No guarantee of outcomes',
-    body: 'Any real-money game referenced on this site, including Colour Prediction and Wingo, involves financial risk and chance-based outcomes. We make no guarantee of winnings, and you should never wager money you cannot afford to lose.',
+    title: '3. No promised outcomes',
+    body: 'Real-money formats referenced here, including Wingo and Colour Prediction, involve financial risk and chance-based results. We guarantee no winnings — never wager money you can\'t afford to lose.',
   },
   {
-    title: '4. Age & eligibility',
-    body: 'This site and the games referenced are intended for users who are 18 years of age or older and legally permitted to participate in real-money gaming under the laws applicable to their location.',
+    title: '4. Age and eligibility',
+    body: 'Content on this site and the games it references are intended only for users 18 or older who are legally permitted to take part in real-money gaming where they live.',
   },
   {
-    title: '5. Third-party links',
-    body: 'Links to the official operator\'s platform are provided for convenience, including affiliate/referral links which may earn us a commission at no extra cost to you. We are not responsible for the content, security, or practices of third-party sites once you leave sikkimgame.in.net.',
+    title: '5. Outbound and affiliate links',
+    body: 'Links to the official platform, including affiliate links that may earn us a commission at no cost to you, are provided for convenience. We aren\'t responsible for the official platform\'s content or practices once you leave this site.',
   },
   {
-    title: '6. Accuracy of information',
-    body: 'We aim to keep guides accurate and current, but game rules, bonuses, and app details can change without notice on the official platform. Always verify current rules directly in the official app before relying on any detail from this site.',
+    title: '6. Accuracy of our guides',
+    body: 'We work to keep every guide current, but app layouts, bonus terms and game rules can change without notice on the official platform. Always confirm live details in the app itself.',
   },
   {
     title: '7. Limitation of liability',
-    body: 'sikkimgame.in.net is not liable for any financial loss, account issue, or damage arising from your use of the official gaming platform or reliance on information published here.',
+    body: 'sikkimgame.co.in accepts no liability for financial loss, account disputes, or damages arising from your use of the official platform or reliance on this site\'s content.',
   },
   {
     title: '8. Changes to these terms',
-    body: 'We may revise these Terms & Conditions from time to time. Continued use of the site after changes are posted constitutes acceptance of the updated terms.',
+    body: 'These terms may be revised at any time. Continuing to use the site after an update means you accept the revised version.',
   },
   {
     title: '9. Contact',
-    body: 'Questions about these terms can be sent via our Contact page.',
+    body: 'Reach us through the Contact page with any questions about these terms.',
   },
 ];

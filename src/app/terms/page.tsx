@@ -9,9 +9,9 @@ import { termsFaqs, termsSections } from '@/lib/content/terms';
 export const metadata: Metadata = buildMetadata({
   title: 'Terms & Conditions',
   description:
-    'Read the Terms & Conditions for using sikkimgame.in.net, an independent Sikkim Game information and affiliate resource.',
+    'Terms and Conditions for using sikkimgame.co.in, an independent Sikkim Game information and referral resource.',
   path: '/terms',
-  keywords: ['Sikkim Game Terms and Conditions'],
+  keywords: ['Sikkim Game Zone Terms and Conditions'],
 });
 
 export default function TermsPage() {
@@ -21,7 +21,7 @@ export default function TermsPage() {
       <PageHero
         eyebrow="Legal"
         title="Terms & Conditions"
-        intro="Please read these terms carefully before using sikkimgame.in.net. They apply only to this website, not the official Sikkim Game operator's platform."
+        intro="Please read before using sikkimgame.co.in. These terms apply only to this website, not the official Sikkim Game operator's platform."
       />
 
       <Section>
@@ -36,7 +36,7 @@ export default function TermsPage() {
       </Section>
 
       <Section id="faq" className="border-t border-white/5 bg-navy-900/40">
-        <SectionHeading eyebrow="FAQs" title="Terms & Conditions — Frequently Asked Questions" />
+        <SectionHeading eyebrow="FAQs" title="Terms & Conditions — frequently asked questions" />
         <FaqAccordion items={termsFaqs} />
       </Section>
     </>

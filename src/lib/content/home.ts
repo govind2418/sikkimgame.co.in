@@ -2,28 +2,28 @@ import type { FaqItem } from '@/lib/schema';
 
 export const homeFaqs: FaqItem[] = [
   {
-    question: 'What is Sikkim Game?',
+    question: 'What exactly is sikkimgame.co.in?',
     answer:
-      'Sikkim Game is the common name players use for an online colour prediction and Wingo-style number game platform. This website, sikkimgame.in.net, is an independent guide hub covering login, registration, download, invite codes, gift codes and game rules — it is not the operator itself.',
+      'Sikkim Game Zone is a reader-focused guide site covering sign-in, sign-up, APK installation, bonus and invite codes, and plain-English breakdowns of Wingo and Colour Prediction rounds. We are not the game operator — think of us as a fast reference before you open the official app.',
   },
   {
-    question: 'Is sikkimgame.in.net the official Sikkim Game app?',
+    question: 'Do you run the game or hold my account details?',
     answer:
-      'No. sikkimgame.in.net is an independent, unofficial information resource. Account creation, deposits, gameplay and withdrawals all happen on the official operator platform, which our Register and Download pages link to.',
+      'No. We never handle deposits, withdrawals, passwords or account data. Every real action — creating an account, adding funds, placing a round — happens on the official operator platform that our buttons link out to.',
   },
   {
-    question: 'How do I register for Sikkim Game?',
+    question: 'What is the fastest way to get set up?',
     answer:
-      'Visit our Register page for a full step-by-step walkthrough, or tap the Register Now button on any page to go directly to the official sign-up flow.',
+      'Start with our How to Download guide to get the app, then follow How to Register for a walkthrough of the sign-up form. Both take a few minutes combined.',
   },
   {
-    question: 'Where can I download the Sikkim Game APK?',
+    question: 'How current is the information on this site?',
     answer:
-      'Our Download page explains how to get the Android APK or web app safely, including what to check before installing any third-party file.',
+      'We review and refresh every guide on a rolling basis. That said, the official app can change its layout or rules at any time, so treat our screenshots and steps as a close reference, not a pixel-perfect mirror.',
   },
   {
-    question: 'Is Sikkim Game legal to play?',
+    question: 'Is any of this gambling advice or a guarantee of profit?',
     answer:
-      'Real-money gaming rules vary by state in India. We do not make legal guarantees — please check your local regulations and only play if it is permitted where you live and you are 18 or older.',
+      'No. Wingo and Colour Prediction are chance-based, real-money formats. We explain how they work so you understand the mechanics — we do not sell predictions, and no one can promise you a result. Please read our full Disclaimer before playing.',
   },
 ];

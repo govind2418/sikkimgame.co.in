@@ -6,17 +6,17 @@ import { GridIcon, PaletteIcon } from '@/components/icons';
 const games = [
   {
     icon: GridIcon,
-    name: 'Wingo Game',
-    body: 'A fast-paced number and colour guessing round where every result is generated on a fixed timer. Learn the format, terminology and result cycle.',
+    name: 'Wingo',
+    body: 'A rapid-fire number, colour and size format where every round closes on a fixed timer. We break down bet types and how results are revealed.',
     href: '/wingo',
-    cta: 'Read Wingo Guide',
+    cta: 'Read the Wingo Guide',
   },
   {
     icon: PaletteIcon,
     name: 'Colour Prediction',
-    body: 'Pick a colour before each round closes and see how payouts are structured. Understand the rules before you try it on the official app.',
+    body: 'Choose a colour before the round locks and see how the payout table is typically structured — explained before you risk anything.',
     href: '/colour-prediction',
-    cta: 'Read Colour Prediction Guide',
+    cta: 'Read the Colour Prediction Guide',
   },
 ];
 
@@ -24,9 +24,9 @@ export function GamesShowcase() {
   return (
     <Section id="games">
       <SectionHeading
-        eyebrow="Popular game modes"
-        title="Wingo & Colour Prediction, explained simply"
-        subtitle="Two of the most searched Sikkim Game modes — here's what to know before you play."
+        eyebrow="Game modes"
+        title="Wingo and Colour Prediction, in plain English"
+        subtitle="The two formats most people search for — here's the mechanics, not the marketing."
       />
       <div className="grid gap-5 sm:grid-cols-2">
         {games.map(({ icon: Icon, name, body, href, cta }) => (

@@ -11,13 +11,15 @@ type BuildMetadataArgs = {
 
 const BASE_KEYWORDS = [
   'Sikkim Game',
+  'Sikkim Game Zone',
+  'sikkimgame.co.in',
   'Sikkim Game Login',
   'Sikkim Game Register',
+  'Sikkim Game Download',
+  'Sikkim Game APK Guide',
+  'Sikkim Game Bonus',
   'Sikkim Login',
   'Sikkim Register',
-  'Sikkim Game Download',
-  'Sikkim Game APK',
-  'Sikkim Game App',
 ];
 
 export function buildMetadata({ title, description, path, keywords, ogTitle }: BuildMetadataArgs): Metadata {

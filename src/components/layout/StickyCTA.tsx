@@ -14,11 +14,11 @@ export function StickyCTA() {
           showArrow={false}
         >
           <DownloadIcon className="h-4 w-4" />
-          Download
+          Get App
         </CtaButton>
         <CtaButton href={SITE.registerUrl} variant="primary" className="flex-1" showArrow={false}>
           <UserPlusIcon className="h-4 w-4" />
-          Register Now
+          Create Account
         </CtaButton>
       </div>
     </div>

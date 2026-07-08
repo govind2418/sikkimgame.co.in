@@ -2,23 +2,23 @@ import type { FaqItem } from '@/lib/schema';
 
 export const aboutFaqs: FaqItem[] = [
   {
-    question: 'Who runs sikkimgame.in.net?',
+    question: 'Who is behind sikkimgame.co.in?',
     answer:
-      'sikkimgame.in.net is an independent information resource focused on Sikkim Game — covering login, registration, downloads, codes and game rules. We are not the game operator.',
+      'An independent editorial team that writes and maintains guides on Sikkim Game topics — sign-in, sign-up, downloads, codes and game rules. We do not operate the game itself.',
   },
   {
-    question: 'Are you affiliated with the Government of Sikkim?',
+    question: 'Any connection to the Government of Sikkim?',
     answer:
-      'No. Despite the shared name, this site is not operated, endorsed, or affiliated with the Government of Sikkim or any state authority. "Sikkim Game" is simply the common name used for this platform by players.',
+      'None. This site is not run, endorsed, or authorised by the Government of Sikkim or any state body — "Sikkim" here simply reflects the common player name for this game category.',
   },
   {
-    question: 'Do you operate the game or hold user funds?',
+    question: 'Do you ever touch user funds or accounts?',
     answer:
-      'No. We do not run any game, process deposits or withdrawals, or hold user accounts. All of that takes place on the official operator\'s platform, which our pages link to.',
+      'No. We hold no accounts, process no deposits or withdrawals, and store no user data. That entire side of things happens on the official operator\'s platform.',
   },
   {
-    question: 'How do you make money?',
+    question: 'How does the site make money?',
     answer:
-      'This site may earn a referral commission when visitors sign up on the official platform through our links, at no extra cost to the user. This does not affect the accuracy of our content.',
+      'Some outbound links are affiliate/referral links, meaning we may earn a small commission if you sign up through them — at no extra cost to you. This never influences what we write.',
   },
 ];

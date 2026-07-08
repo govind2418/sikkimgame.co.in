@@ -7,15 +7,44 @@ html {
 }
 
 body {
-  background-color: #050914;
+  background-color: #030712;
   color: #e2e8f0;
 }
 
 ::selection {
-  background-color: #38bdf8;
-  color: #050914;
+  background-color: #00d4ff;
+  color: #030712;
 }
 
 summary::-webkit-details-marker {
   display: none;
+}
+
+.glass-panel {
+  background: rgba(15, 30, 66, 0.35);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(0, 212, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.06) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(126, 232, 250, 0.9) 0%, rgba(0, 212, 255, 0) 70%);
+  animation: drift linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .particle,
+  .animate-blobFloat,
+  .animate-blobFloatSlow,
+  .animate-drift {
+    animation: none !important;
+  }
 }

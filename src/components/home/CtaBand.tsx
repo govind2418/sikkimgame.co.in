@@ -2,8 +2,8 @@ import { CtaButton } from '@/components/ui/Button';
 import { SITE } from '@/lib/site';
 
 export function CtaBand({
-  title = 'Ready to get started with Sikkim Game?',
-  subtitle = 'Register on the official platform or grab the app in under a minute.',
+  title = 'Ready to jump in?',
+  subtitle = 'Create your account on the official platform, or grab the app first if you haven\'t already.',
 }: {
   title?: string;
   subtitle?: string;
@@ -14,9 +14,9 @@ export function CtaBand({
         <h2 className="text-2xl font-bold text-white sm:text-3xl">{title}</h2>
         <p className="mx-auto mt-3 max-w-xl text-slate-300">{subtitle}</p>
         <div className="mt-7 flex flex-wrap justify-center gap-3">
-          <CtaButton href={SITE.registerUrl} size="lg">Register Now</CtaButton>
-          <CtaButton href="/download" external={false} variant="secondary" size="lg">
-            Download App
+          <CtaButton href={SITE.registerUrl} size="lg">Create Account</CtaButton>
+          <CtaButton href="/how-to-download" external={false} variant="secondary" size="lg">
+            How to Download
           </CtaButton>
         </div>
       </div>

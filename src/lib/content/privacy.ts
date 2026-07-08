@@ -2,49 +2,49 @@ import type { FaqItem } from '@/lib/schema';
 
 export const privacyFaqs: FaqItem[] = [
   {
-    question: 'Does sikkimgame.in.net collect my personal data?',
+    question: 'Does this site collect my personal data?',
     answer:
-      'We do not run user accounts, so we do not collect registration details, passwords, or payment information. Standard, privacy-friendly web analytics may be used to understand aggregate traffic to our pages.',
+      'We run no accounts, so we never collect passwords, registration details or payment information. Basic, privacy-respecting analytics may be used to see which pages get read.',
   },
   {
     question: 'Do you use cookies?',
     answer:
-      'This site may use minimal cookies for basic functionality and anonymised analytics. We do not use cookies to process payments or store gaming account credentials, since we do not operate any accounts.',
+      'Only minimal cookies for functionality and anonymised traffic measurement — never to process payments or store gaming credentials, since we don\'t operate any accounts.',
   },
   {
-    question: 'Who should I contact about the official platform\'s privacy policy?',
+    question: 'What about the official app\'s privacy policy?',
     answer:
-      'For questions about how the official Sikkim Game operator handles your account data, refer to the privacy policy published within their app or official website, not this site.',
+      'That\'s entirely separate and maintained by the operator directly — check their in-app or official policy for how your account data is handled.',
   },
 ];
 
 export const privacySections = [
   {
-    title: '1. Scope of this policy',
-    body: 'This Privacy Policy explains how sikkimgame.in.net ("we", "this site") handles information related to visitors of this website. It does not cover the official Sikkim Game operator\'s app or website, which maintains its own separate privacy policy.',
+    title: '1. What this policy covers',
+    body: 'This policy explains how sikkimgame.co.in ("this site", "we") handles data from visitors to this website. It has no bearing on the official Sikkim Game operator\'s own app or platform, which maintains a separate policy.',
   },
   {
     title: '2. Information we collect',
-    body: 'We do not require account registration to browse this site. We may collect standard, non-identifying technical data (such as browser type, approximate location, and pages visited) through privacy-conscious analytics tools to understand how our content is used.',
+    body: 'No account is needed to read this site. We may collect standard, non-identifying technical data — browser type, rough location, pages viewed — through privacy-conscious analytics to understand content usage.',
   },
   {
     title: '3. Cookies',
-    body: 'Basic cookies may be used to remember simple preferences or measure aggregate traffic. You can disable cookies through your browser settings; core content will still be accessible.',
+    body: 'Basic cookies may store simple preferences or measure aggregate traffic. Disable them in your browser at any time; the site will still function.',
   },
   {
-    title: '4. Third-party links',
-    body: 'This site links to the official Sikkim Game operator\'s platform. Once you leave sikkimgame.in.net, that platform\'s own privacy policy and data practices apply — we encourage you to review them independently.',
+    title: '4. Outbound links',
+    body: 'We link out to the official operator platform. Once you leave sikkimgame.co.in, that platform\'s own privacy practices take over — review them independently before creating an account.',
   },
   {
-    title: '5. Data we do not collect',
-    body: 'We never ask for your account password, OTP, card numbers, or banking credentials. If anyone claiming to represent this site asks for such information, do not share it — it is not a legitimate request.',
+    title: '5. What we will never ask for',
+    body: 'Your account password, OTP, card number or banking credentials are never required by this site. Treat any such request claiming to be from us as fraudulent.',
   },
   {
-    title: '6. Changes to this policy',
-    body: 'We may update this Privacy Policy periodically to reflect changes in our content or applicable regulations. The latest version will always be published on this page.',
+    title: '6. Updates to this policy',
+    body: 'We may revise this policy as our content or applicable regulation changes. The version published here is always the current one.',
   },
   {
     title: '7. Contact',
-    body: 'For questions about this policy, reach out via our Contact page.',
+    body: 'Questions about this policy can be sent through our Contact page.',
   },
 ];

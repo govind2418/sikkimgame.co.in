@@ -16,6 +16,21 @@ export function organizationSchema() {
   };
 }
 
+export function websiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: SITE.name,
+    url: SITE.url,
+    inLanguage: 'en-IN',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: `${SITE.url}/faq?q={search_term_string}`,
+      'query-input': 'required name=search_term_string',
+    },
+  };
+}
+
 export function faqPageSchema(items: FaqItem[]) {
   return {
     '@context': 'https://schema.org',

@@ -12,11 +12,11 @@ import { registerFaqs, registerSteps } from '@/lib/content/register';
 import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game Register — Create Your Account in Minutes',
+  title: 'Sikkim Game Register — Create an Account in Under a Minute',
   description:
-    'Step-by-step Sikkim Game registration guide: what details you need, how invite codes work, and how to sign up safely on the official platform.',
+    'Quick Sikkim Game sign-up overview: what you need, how invite codes fit in, and what to check before you register.',
   path: '/register',
-  keywords: ['Sikkim Game Register', 'Sikkim Register', 'Sikkim Game Sign Up', 'Sikkim Game New Account'],
+  keywords: ['Sikkim Game Register', 'Sikkim Game Sign Up'],
 });
 
 export default function RegisterPage() {
@@ -24,14 +24,14 @@ export default function RegisterPage() {
     <>
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Register', path: '/register' }]} />
       <PageHero
-        eyebrow="Sikkim Game Register"
-        title="Sikkim Game Register: Create Your Account the Right Way"
-        intro="New to Sikkim Game — also searched as Sikkim Register? This guide covers exactly what information you need, how the sign-up flow works, and how to use an invite code if you have one."
+        eyebrow="Sign Up"
+        title="Create your Sikkim Game account in under a minute"
+        intro="A short overview of what the sign-up form asks for. Want every screen walked through in detail? See our full How to Register guide."
       />
 
       <Section>
-        <SectionHeading eyebrow="Step-by-step" title="How to register on Sikkim Game" />
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <SectionHeading eyebrow="At a glance" title="What sign-up involves" />
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {registerSteps.map((step, index) => (
             <Card key={step.title}>
               <div className="flex items-center gap-3">
@@ -46,41 +46,45 @@ export default function RegisterPage() {
         </div>
         <div className="mt-8 flex flex-wrap gap-3">
           <CtaButton href={SITE.registerUrl} variant="primary" size="lg">
-            <UserPlusIcon className="h-4 w-4" /> Register Now
+            <UserPlusIcon className="h-4 w-4" /> Create Account
           </CtaButton>
-          <CtaButton href="/invite-code" external={false} variant="secondary" size="lg">
-            <TicketIcon className="h-4 w-4" /> Have an Invite Code?
+          <CtaButton href="/how-to-register" external={false} variant="secondary" size="lg">
+            Full Step-by-Step Guide
+          </CtaButton>
+          <CtaButton href="/invite-code" external={false} variant="ghost" size="lg">
+            <TicketIcon className="h-4 w-4" /> Have an invite code?
           </CtaButton>
         </div>
       </Section>
 
       <Section className="border-t border-white/5 bg-navy-900/40">
-        <SectionHeading eyebrow="Before you sign up" title="What to check before registering" />
+        <SectionHeading eyebrow="Before you tap register" title="Two quick checks" />
         <div className="max-w-3xl space-y-4 text-sm leading-relaxed text-slate-300">
           <p>
-            Registration on Sikkim Game is designed to be quick, but a little preparation helps
-            avoid delays. Make sure your phone can receive SMS OTPs, and double-check you are on
-            the official domain linked from our <CtaButton href="/download" external={false} variant="ghost" size="md" className="px-0" showArrow={false}>Download page</CtaButton> before
-            entering any personal details.
+            Confirm your phone can receive SMS OTPs, and make sure you&apos;re on the official domain
+            reached through our{' '}
+            <CtaButton href="/how-to-download" external={false} variant="ghost" size="md" className="px-0" showArrow={false}>
+              How to Download
+            </CtaButton>{' '}
+            page before typing in anything personal.
           </p>
           <p>
-            You should be at least 18 years old to create an account, and you are responsible for
-            confirming that real-money gaming is permitted in your state before you register or
-            add funds. This site does not process registrations, payments, or withdrawals — all
-            of that happens on the official operator&apos;s platform.
+            You need to be 18 or older, and it&apos;s on you to confirm real-money gaming is allowed
+            where you live. This site never processes sign-ups, payments, or withdrawals — that
+            all happens on the official operator&apos;s own platform.
           </p>
         </div>
       </Section>
 
       <Section id="faq">
-        <SectionHeading eyebrow="FAQs" title="Sikkim Game Register — Frequently Asked Questions" />
+        <SectionHeading eyebrow="FAQs" title="Sign-up questions, answered" />
         <FaqAccordion items={registerFaqs} />
       </Section>
 
       <Section>
         <CtaBand
-          title="Create your Sikkim Game account today"
-          subtitle="Registration takes less than a minute on the official platform."
+          title="Set up your account today"
+          subtitle="Sign-up takes under a minute on the official platform."
         />
       </Section>
     </>

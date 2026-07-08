@@ -11,11 +11,11 @@ import { aboutFaqs } from '@/lib/content/about';
 import { DISCLAIMER } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'About Sikkim Game — Who We Are',
+  title: 'About Sikkim Game Zone',
   description:
-    'Learn about sikkimgame.in.net: an independent Sikkim Game information hub covering login, registration, downloads, and game guides.',
+    'sikkimgame.co.in is an independent Sikkim Game guide hub covering sign-in, sign-up, downloads and game rules. Here is who we are.',
   path: '/about',
-  keywords: ['About Sikkim Game', 'Sikkim Game Info'],
+  keywords: ['About Sikkim Game Zone'],
 });
 
 export default function AboutPage() {
@@ -24,64 +24,63 @@ export default function AboutPage() {
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'About', path: '/about' }]} />
       <PageHero
         eyebrow="About Us"
-        title="About Sikkim Game Info Hub"
-        intro="sikkimgame.in.net exists to make Sikkim Game information easy to find, accurate, and free of clutter. Here's who we are and how this site works."
+        title="Why sikkimgame.co.in exists"
+        intro="Search results for Sikkim Game are often scattered or overly promotional. We built this hub to fix that — here's how it works and who runs it."
       />
 
       <Section>
         <div className="space-y-5 text-sm leading-relaxed text-slate-300 max-w-3xl">
           <p>
-            Searching for &quot;Sikkim Game&quot; often turns up scattered, outdated, or overly
-            promotional pages. We built sikkimgame.in.net as a single, fast-loading hub covering
-            the exact things players look for: how to log in, how to register, where to download
-            the app, how invite and gift codes work, and plain explanations of the Wingo and
-            Colour Prediction game modes.
+            sikkimgame.co.in gathers the exact things players search for in one fast-loading
+            place: signing in, creating an account, getting the app safely, understanding bonus
+            and invite codes, and reading Wingo or Colour Prediction rules without the sales
+            pitch that usually comes with them.
           </p>
           <p>
-            This site is independent and unofficial. We are not the game developer or operator,
-            we do not process registrations, deposits or withdrawals, and we are not affiliated
-            with or endorsed by the Government of Sikkim or any state authority — the name
-            reflects common player terminology, not an official government connection.
+            This site is independent and unofficial. We don&apos;t develop or operate the game, we
+            never touch registrations, deposits or withdrawals, and we have no affiliation with
+            the Government of Sikkim or any state authority — the name simply reflects how
+            players refer to this game category.
           </p>
         </div>
 
         <div className="mt-10 grid gap-5 sm:grid-cols-3">
           <Card>
             <ZapIcon className="h-8 w-8 text-neon-400" />
-            <h3 className="mt-3 text-base font-semibold text-white">Our goal</h3>
+            <h3 className="mt-3 text-base font-semibold text-white">What we&apos;re after</h3>
             <p className="mt-2 text-sm text-slate-300">
-              Fast, accurate, jargon-free guides so you spend less time searching and more time
-              informed.
+              Guides that get to the point, so you spend less time searching and more time
+              actually informed.
             </p>
           </Card>
           <Card>
             <ShieldIcon className="h-8 w-8 text-neon-400" />
-            <h3 className="mt-3 text-base font-semibold text-white">Our approach</h3>
+            <h3 className="mt-3 text-base font-semibold text-white">How we work</h3>
             <p className="mt-2 text-sm text-slate-300">
-              Transparent labeling of what we are (an information/affiliate hub) and what we are
-              not (the operator).
+              Transparent about what we are — an information and referral hub — and equally
+              clear about what we&apos;re not.
             </p>
           </Card>
           <Card>
             <UsersIcon className="h-8 w-8 text-neon-400" />
-            <h3 className="mt-3 text-base font-semibold text-white">Who it&apos;s for</h3>
+            <h3 className="mt-3 text-base font-semibold text-white">Who reads this</h3>
             <p className="mt-2 text-sm text-slate-300">
-              Anyone searching for Sikkim Game login, registration, download, or game rule
-              information.
+              Anyone looking for Sikkim Game sign-in help, sign-up steps, downloads, or game
+              rules in one place.
             </p>
           </Card>
         </div>
       </Section>
 
       <Section className="border-t border-white/5 bg-navy-900/40">
-        <SectionHeading eyebrow="Full disclosure" title="Our disclaimer" />
+        <SectionHeading eyebrow="Full disclosure" title="Our disclaimer, in short" />
         <Card glass className="max-w-3xl text-sm leading-relaxed text-slate-300">
           {DISCLAIMER}
         </Card>
       </Section>
 
       <Section id="faq">
-        <SectionHeading eyebrow="FAQs" title="About Sikkim Game — Frequently Asked Questions" />
+        <SectionHeading eyebrow="FAQs" title="About us — frequently asked questions" />
         <FaqAccordion items={aboutFaqs} />
       </Section>
 

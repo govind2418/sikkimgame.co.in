@@ -6,14 +6,20 @@ const routes = [
   '/login',
   '/register',
   '/download',
+  '/how-to-register',
+  '/how-to-download',
+  '/apk-guide',
   '/invite-code',
   '/gift-code',
+  '/bonus',
   '/colour-prediction',
   '/wingo',
+  '/faq',
   '/about',
   '/contact',
   '/privacy-policy',
   '/terms',
+  '/disclaimer',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

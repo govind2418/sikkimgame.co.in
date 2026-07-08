@@ -12,11 +12,11 @@ import { ShieldIcon, GridIcon, ZapIcon } from '@/components/icons';
 import { wingoFaqs } from '@/lib/content/wingo';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game Wingo — How to Play & Game Rules',
+  title: 'Sikkim Game Wingo — Rules, Bet Types & Timers',
   description:
-    'Learn how Sikkim Game Wingo works: number, colour and size betting explained, round timers, and responsible play tips.',
+    'How Sikkim Game Wingo actually works: number, colour and size bets, round timing, and a few responsible-play habits worth keeping.',
   path: '/wingo',
-  keywords: ['Sikkim Game Wingo', 'Sikkim Wingo', 'Sikkim Game Wingo Game'],
+  keywords: ['Sikkim Game Wingo', 'Sikkim Wingo Rules'],
 });
 
 export default function WingoPage() {
@@ -24,44 +24,44 @@ export default function WingoPage() {
     <>
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Wingo', path: '/wingo' }]} />
       <PageHero
-        eyebrow="Sikkim Game Wingo"
-        title="Sikkim Game Wingo: How the Game Works"
-        intro="Wingo is one of the most popular Sikkim Game modes. Here's what the numbers, colours and size options mean, and how a round plays out."
+        eyebrow="Wingo"
+        title="Wingo, decoded: numbers, colours and the clock"
+        intro="Wingo is one of the most-searched Sikkim Game modes. Here's what a round actually looks like, before you place anything."
       />
 
       <Section>
         <div className="grid gap-10 lg:grid-cols-[1fr_280px] lg:items-start">
           <div>
-            <SectionHeading eyebrow="Game format" title="Understanding a Wingo round" />
+            <SectionHeading eyebrow="Format" title="What happens in one round" />
             <div className="space-y-4 text-sm leading-relaxed text-slate-300">
               <p>
-                Each Wingo round centers on a set of numbers, typically 0–9. Before the round timer
-                ends, players choose a bet type — a specific number, an associated colour, or a
-                size category such as big (usually 5–9) or small (usually 0–4). When the timer hits
-                zero, a result number is revealed, and payouts are calculated based on which bet
-                types matched.
+                A round centers on a set of numbers, usually 0 through 9. Before the countdown
+                hits zero, you pick a bet type — a single number, its associated colour, or a size
+                bracket like big (roughly 5–9) or small (roughly 0–4). When the clock runs out, a
+                result number drops, and payouts settle based on which bet types line up.
               </p>
               <p>
-                Because rounds run back-to-back on a short timer, Wingo feels fast and continuous
-                compared to slower lottery draws. That speed is also why it&apos;s important to set
-                a personal budget beforehand rather than chasing losses across many quick rounds.
+                Rounds queue back-to-back on a short timer, which is exactly why Wingo feels
+                faster and more continuous than a traditional lottery draw. That same speed is
+                the reason a personal budget set before you start matters more here than in
+                slower formats.
               </p>
             </div>
             <div className="mt-8 grid gap-5 sm:grid-cols-2">
               <Card>
                 <GridIcon className="h-7 w-7 text-neon-400" />
-                <h3 className="mt-3 text-base font-semibold text-white">Number, colour & size bets</h3>
+                <h3 className="mt-3 text-base font-semibold text-white">Three bet types</h3>
                 <p className="mt-2 text-sm text-slate-300">
-                  Each bet type carries different odds and multipliers — the app displays the
-                  current payout table before you confirm a bet.
+                  Number, colour and size each carry their own odds — the app shows the live
+                  payout table before you confirm anything.
                 </p>
               </Card>
               <Card>
                 <ZapIcon className="h-7 w-7 text-neon-400" />
-                <h3 className="mt-3 text-base font-semibold text-white">Quick round cycles</h3>
+                <h3 className="mt-3 text-base font-semibold text-white">Back-to-back rounds</h3>
                 <p className="mt-2 text-sm text-slate-300">
-                  New rounds start immediately after the previous one closes, so results come in
-                  fast succession.
+                  A new round opens the moment the last one closes, so results arrive in quick
+                  succession.
                 </p>
               </Card>
             </div>
@@ -71,32 +71,31 @@ export default function WingoPage() {
       </Section>
 
       <Section className="border-t border-white/5 bg-navy-900/40">
-        <SectionHeading eyebrow="Play responsibly" title="Set limits before you play Wingo" />
+        <SectionHeading eyebrow="Play responsibly" title="Set your limit before the first round" />
         <Card glass className="max-w-3xl">
           <ShieldIcon className="h-8 w-8 text-neon-400" />
           <p className="mt-3 text-sm leading-relaxed text-slate-300">
-            Because Wingo rounds move quickly, it&apos;s easy to play many rounds in a short time.
-            Decide on a maximum amount you&apos;re willing to spend before you start, and stop once
-            you reach it — regardless of whether recent rounds were wins or losses. Ignore any
-            third party offering a paid &quot;Wingo trick&quot; or &quot;prediction bot&quot;; results are generated by
-            the platform&apos;s system and cannot be reliably predicted.
+            Because rounds move fast, it&apos;s easy to lose track of how many you&apos;ve played. Pick a
+            maximum spend before you open the app and stop there, win or lose. Ignore anyone
+            selling a paid &quot;Wingo trick&quot; — results come from the platform&apos;s own system and
+            aren&apos;t beatable by a formula.
           </p>
         </Card>
       </Section>
 
       <Section id="faq">
-        <SectionHeading eyebrow="FAQs" title="Sikkim Game Wingo — Frequently Asked Questions" />
+        <SectionHeading eyebrow="FAQs" title="Wingo questions, answered" />
         <FaqAccordion items={wingoFaqs} />
       </Section>
 
       <Section>
         <CtaBand
-          title="Ready to try Wingo?"
-          subtitle="Register or log in on the official app to explore the current Wingo rounds."
+          title="Ready to try a round?"
+          subtitle="Sign in or create an account on the official app to see the live Wingo table."
         />
         <div className="mt-6 flex justify-center">
           <CtaButton href="/colour-prediction" external={false} variant="ghost" showArrow>
-            Also see: Sikkim Game Colour Prediction guide
+            Also see: Colour Prediction rules
           </CtaButton>
         </div>
       </Section>

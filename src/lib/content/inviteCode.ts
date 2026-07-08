@@ -2,28 +2,28 @@ import type { FaqItem } from '@/lib/schema';
 
 export const inviteCodeFaqs: FaqItem[] = [
   {
-    question: 'What is a Sikkim Game invite code?',
+    question: 'What does an invite code actually do?',
     answer:
-      'An invite code is a short alphanumeric code shared by an existing user or promotional page. Entering it during registration can link your new account to that referral and sometimes unlocks a welcome bonus.',
+      'It links your new account to whoever shared the code — a friend or a promotional page — and can sometimes unlock a welcome bonus for both sides depending on the current campaign.',
   },
   {
-    question: 'Where do I enter my invite code?',
+    question: 'Where do I type it in?',
     answer:
-      'Invite codes are usually entered on the registration screen, in a field labeled "Invite Code" or "Referral Code". Some platforms also allow adding it later from account settings — check the official app for the current layout.',
+      'Usually on the registration screen, in a field labeled Invite Code or Referral Code. Some app versions also allow it from account settings shortly after sign-up.',
   },
   {
-    question: 'Is an invite code required to register?',
+    question: 'Is it mandatory to register?',
     answer:
-      'No, in most cases you can register without one. An invite code is an optional way to connect your account to a referrer and potentially receive extra benefits.',
+      'No. You can create an account with no invite code at all — it\'s purely optional.',
   },
   {
-    question: 'Can I use an invite code after I already registered?',
+    question: 'I already registered — can I still add one?',
     answer:
-      'This depends on the platform\'s current rules — some allow adding a referral code shortly after signup, others only accept it during initial registration. If the field isn\'t available later, it likely needs to be entered at signup.',
+      'Depends entirely on the platform\'s current rules; some allow it briefly post-signup, others only at the exact moment of registration. If the option isn\'t visible in your settings, it likely needs to be entered at sign-up.',
   },
   {
-    question: 'Where can I find a valid Sikkim Game invite code?',
+    question: 'How do I know a shared invite code is legitimate?',
     answer:
-      'Invite codes are typically shared by existing players or official promotional channels. Be cautious of codes posted alongside requests for payment or personal information — a legitimate invite code never requires you to pay to use it.',
+      'A real invite code never requires payment to "activate" and never needs your password or OTP to work. If someone attaches either condition, walk away.',
   },
 ];

@@ -2,51 +2,42 @@ import type { FaqItem } from '@/lib/schema';
 
 export const registerFaqs: FaqItem[] = [
   {
-    question: 'How do I register on Sikkim Game?',
+    question: 'How long does sign-up take?',
     answer:
-      'Open the official app or website, tap Register, enter your mobile number, create a password, verify the OTP sent to your phone, and your account is ready. It usually takes under a minute.',
+      'Under a minute in most cases: mobile number, password, OTP, done. See our full How to Register walkthrough if you want every screen explained.',
   },
   {
-    question: 'Do I need an invite code to register?',
+    question: 'Is an invite code required?',
     answer:
-      'An invite code is usually optional during registration but can unlock welcome bonuses on some campaigns. See our Invite Code page for details on where to enter one if you have it.',
+      'No, it\'s optional. Adding one during sign-up can occasionally unlock a welcome bonus — check our Invite Code page for how that works.',
   },
   {
-    question: 'What details are required to sign up?',
+    question: 'Is creating an account free?',
     answer:
-      'Typically just a valid mobile number, a password of your choice, and OTP verification. Never provide banking passwords or card PINs during registration — those are never required to create an account.',
+      'Yes. Adding funds later is entirely your own decision and never required just to hold an account.',
   },
   {
-    question: 'Can I register with the same number twice?',
+    question: 'Can I register twice with the same number?',
     answer:
-      'No, each mobile number can usually be linked to only one account. If you already registered, use the Login page instead of creating a duplicate account.',
-  },
-  {
-    question: 'Is Sikkim Game registration free?',
-    answer:
-      'Yes, creating an account is free. You only need to add funds if and when you choose to, and that step is entirely optional and your own decision.',
+      'No, one account per mobile number. Already signed up? Use the Login page instead.',
   },
 ];
 
 export const registerSteps = [
   {
-    title: 'Get the official app or site',
-    body: 'Use our Download page to find the correct APK or web link, then open the registration screen.',
+    title: 'Get the official app or link',
+    body: 'Use our Download page to reach the correct sign-up screen.',
   },
   {
-    title: 'Enter your mobile number',
-    body: 'Provide an active number you can access, since it is used for OTP verification and password recovery later.',
+    title: 'Enter an active mobile number',
+    body: 'You\'ll need access to it for OTP and future password recovery.',
   },
   {
-    title: 'Create a strong password',
-    body: 'Mix letters, numbers, and symbols. Avoid reusing a password from your email or banking apps.',
+    title: 'Set a strong, unique password',
+    body: 'Don\'t reuse a password from your email or banking apps.',
   },
   {
-    title: 'Verify with OTP',
-    body: 'Enter the one-time code sent by SMS. Do not share this code with anyone, including people claiming to be "support".',
-  },
-  {
-    title: 'Add an invite code (optional)',
-    body: 'If you have a valid invite code, enter it where prompted to potentially unlock a welcome bonus — see our Invite Code guide.',
+    title: 'Verify with the OTP sent by SMS',
+    body: 'Never share this code with anyone, including people posing as "support".',
   },
 ];

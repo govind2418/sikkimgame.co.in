@@ -5,7 +5,7 @@ export const runtime = 'edge';
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
-  const title = searchParams.get('title') ?? 'Sikkim Game';
+  const title = searchParams.get('title') ?? 'Sikkim Game Zone';
 
   return new ImageResponse(
     (
@@ -18,7 +18,7 @@ export async function GET(request: NextRequest) {
           alignItems: 'flex-start',
           justifyContent: 'center',
           padding: '80px',
-          background: 'linear-gradient(135deg, #050914 0%, #0a1024 55%, #101a3a 100%)',
+          background: 'linear-gradient(135deg, #030712 0%, #071022 50%, #0f1e42 100%)',
           fontFamily: 'sans-serif',
         }}
       >
@@ -29,13 +29,13 @@ export async function GET(request: NextRequest) {
             gap: '12px',
             padding: '8px 20px',
             borderRadius: '999px',
-            border: '1px solid rgba(56,189,248,0.4)',
-            color: '#38bdf8',
+            border: '1px solid rgba(0,212,255,0.45)',
+            color: '#7ee8fa',
             fontSize: '22px',
             marginBottom: '32px',
           }}
         >
-          sikkimgame.in.net
+          sikkimgame.co.in
         </div>
         <div
           style={{
@@ -57,7 +57,7 @@ export async function GET(request: NextRequest) {
             color: '#94a3b8',
           }}
         >
-          Login • Register • Download • Wingo • Colour Prediction
+          Sign In • Sign Up • APK Guide • Bonus Codes • Wingo • Colour Prediction
         </div>
       </div>
     ),

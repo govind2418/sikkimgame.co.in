@@ -12,11 +12,11 @@ import { contactFaqs } from '@/lib/content/contact';
 import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Contact Sikkim Game Info Hub',
+  title: 'Contact Sikkim Game Zone',
   description:
-    'Get in touch with sikkimgame.in.net for content questions or corrections. For account and payment issues, use official in-app support.',
+    'Reach sikkimgame.co.in for content questions or corrections. For account and payment issues, use official in-app support instead.',
   path: '/contact',
-  keywords: ['Contact Sikkim Game'],
+  keywords: ['Contact Sikkim Game Zone'],
 });
 
 export default function ContactPage() {
@@ -25,8 +25,8 @@ export default function ContactPage() {
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact' }]} />
       <PageHero
         eyebrow="Contact"
-        title="Contact Sikkim Game Info Hub"
-        intro="Have a question about our content, or spotted something that needs updating? Reach out below."
+        title="Get in touch"
+        intro="Spotted an outdated guide or a broken link? Tell us below."
       />
 
       <Section>
@@ -34,7 +34,7 @@ export default function ContactPage() {
           <Card>
             <h3 className="text-base font-semibold text-white">Email us</h3>
             <p className="mt-2 text-sm text-slate-300">
-              For content questions, corrections, or general feedback about this site.
+              For content corrections, suggestions, or general questions about this site.
             </p>
             <a
               href={`mailto:${SITE.contactEmail}`}
@@ -47,8 +47,8 @@ export default function ContactPage() {
             <ShieldIcon className="h-7 w-7 text-neon-400" />
             <h3 className="mt-3 text-base font-semibold text-white">Account or payment issue?</h3>
             <p className="mt-2 text-sm text-slate-300">
-              We cannot access or resolve account, deposit or withdrawal issues. Please use the
-              official app&apos;s in-app support section for those requests.
+              We can&apos;t access or resolve account, deposit or withdrawal issues. Use the official
+              app&apos;s in-app support for those.
             </p>
             <CtaButton variant="secondary" className="mt-4">
               Go to Official App
@@ -58,7 +58,7 @@ export default function ContactPage() {
       </Section>
 
       <Section id="faq" className="border-t border-white/5 bg-navy-900/40">
-        <SectionHeading eyebrow="FAQs" title="Contact — Frequently Asked Questions" />
+        <SectionHeading eyebrow="FAQs" title="Contact — frequently asked questions" />
         <FaqAccordion items={contactFaqs} />
       </Section>
 

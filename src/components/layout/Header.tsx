@@ -1,15 +1,14 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { NAV_LINKS, SITE } from '@/lib/site';
 import { CtaButton } from '@/components/ui/Button';
-import logo from '../../../public/images/brand/logo.png';
+import { Logo } from '@/components/layout/Logo';
 
 export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-navy-950/90 backdrop-blur-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-        <Link href="/" className="flex items-center gap-2" aria-label={`${SITE.name} home`}>
-          <Image src={logo} alt="Sikkim Game logo" height={28} priority className="h-7 w-auto" />
+        <Link href="/" aria-label={`${SITE.name} home`}>
+          <Logo />
         </Link>
 
         <nav aria-label="Primary" className="hidden items-center gap-6 lg:flex">

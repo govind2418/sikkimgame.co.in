@@ -1,37 +1,37 @@
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
-import { ZapIcon, ShieldIcon, SmartphoneIcon, GiftIcon, UsersIcon, GridIcon } from '@/components/icons';
+import { ZapIcon, ShieldIcon, FileTextIcon, PercentIcon, GridIcon, BookOpenIcon } from '@/components/icons';
 
 const benefits = [
   {
-    icon: ZapIcon,
-    title: 'Fast, No-Clutter Guides',
-    body: 'Every guide loads instantly and gets straight to the point — no pop-ups, no autoplay video, no bloated pages slowing you down on mobile data.',
+    icon: FileTextIcon,
+    title: 'APK Install, De-Risked',
+    body: 'Our APK Guide walks through verifying the source, enabling installs safely, and avoiding the modified-file traps that circulate on file-sharing sites.',
   },
   {
     icon: ShieldIcon,
-    title: 'Independent & Transparent',
-    body: 'We clearly label ourselves as an unofficial information resource, not the operator, so you always know exactly where your account and funds are handled.',
+    title: 'We Say What We Are Not',
+    body: 'Clearly labeled as an independent resource on every page — not the operator, not a government body, not a place that touches your money.',
   },
   {
-    icon: SmartphoneIcon,
-    title: 'Step-by-Step Download Help',
-    body: 'Clear, numbered instructions for installing the Android APK safely and finding the official app link without hunting through search results.',
+    icon: ZapIcon,
+    title: 'Built for Slow Connections',
+    body: 'No heavy scripts, no autoplay video, no intrusive pop-ups — every guide is readable in seconds even on a patchy mobile network.',
   },
   {
-    icon: GiftIcon,
-    title: 'Invite & Gift Code Explained',
-    body: 'Understand how invite codes and gift codes are structured, where to enter them, and what to check before trusting a code shared online.',
+    icon: PercentIcon,
+    title: 'Bonus & Code Mechanics Explained',
+    body: 'Our Bonus, Invite Code and Gift Code pages break down how each reward type is structured and where scams typically hide.',
   },
   {
     icon: GridIcon,
-    title: 'Wingo & Colour Prediction 101',
-    body: 'Plain-language explanations of how Wingo rounds and Colour Prediction results are structured, so you go in understanding the basics.',
+    title: 'Wingo & Colour Prediction, Demystified',
+    body: 'Plain-language walkthroughs of round timers, bet types and payout structure — written for first-timers, not insiders.',
   },
   {
-    icon: UsersIcon,
-    title: 'Built for Sikkim Game Users',
-    body: 'Content is organized around the exact questions players search for — login issues, registration steps, codes, and game rules — in one hub.',
+    icon: BookOpenIcon,
+    title: 'Organised Around Real Questions',
+    body: 'Every section maps to something players actually search for: login errors, sign-up steps, code redemption, game rules — one hub, not ten tabs.',
   },
 ];
 
@@ -39,9 +39,9 @@ export function Benefits() {
   return (
     <Section id="benefits">
       <SectionHeading
-        eyebrow="Why use this hub"
-        title="A cleaner way to find Sikkim Game information"
-        subtitle="We built this site to be fast and clear first — every page is designed to help you get to the official platform informed, not confused."
+        eyebrow="Why players land here"
+        title="A calmer way to figure out Sikkim Game"
+        subtitle="We built this hub to answer the question first and sell you nothing second."
       />
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {benefits.map(({ icon: Icon, title, body }) => (
