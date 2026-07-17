@@ -46,12 +46,23 @@ const config: Config = {
           '90%': { opacity: '1' },
           '100%': { transform: 'translateY(-120px) translateX(12px)', opacity: '0' },
         },
+        glowPulse: {
+          '0%, 100%': {
+            boxShadow:
+              '0 0 0 1px rgba(0,212,255,0.35), 0 0 20px 2px rgba(0,212,255,0.35), 0 0 40px 10px rgba(0,212,255,0.15)',
+          },
+          '50%': {
+            boxShadow:
+              '0 0 0 1px rgba(0,212,255,0.65), 0 0 34px 6px rgba(0,212,255,0.6), 0 0 64px 16px rgba(0,212,255,0.3)',
+          },
+        },
       },
       animation: {
         fadeIn: 'fadeIn 0.5s ease-out both',
         blobFloat: 'blobFloat 14s ease-in-out infinite',
         blobFloatSlow: 'blobFloat 22s ease-in-out infinite',
         drift: 'drift 9s ease-in infinite',
+        glowPulse: 'glowPulse 2.2s ease-in-out infinite',
       },
       borderRadius: {
         '2xl': '1rem',
