@@ -15,6 +15,11 @@ export type PageKey =
   | 'wingo'
   | 'colourPrediction'
   | 'lotteryGame'
+  | 'aviator'
+  | 'chickenRoad'
+  | 'cricket'
+  | 'goal'
+  | 'vortex'
   | 'faq'
   | 'about'
   | 'contact'
@@ -40,6 +45,11 @@ export const PAGES: Record<PageKey, { label: string; href: string }> = {
   wingo: { label: 'Wingo', href: '/wingo' },
   colourPrediction: { label: 'Colour Prediction', href: '/colour-prediction' },
   lotteryGame: { label: 'Lottery Game', href: '/lottery-game' },
+  aviator: { label: 'Aviator', href: '/aviator' },
+  chickenRoad: { label: 'Chicken Road 2', href: '/chicken-road-2' },
+  cricket: { label: 'Cricket', href: '/cricket' },
+  goal: { label: 'Goal', href: '/goal' },
+  vortex: { label: 'Vortex', href: '/vortex' },
   faq: { label: 'FAQ', href: '/faq' },
   about: { label: 'About', href: '/about' },
   contact: { label: 'Contact', href: '/contact-us' },
@@ -69,6 +79,11 @@ export const PAGE_RING: PageKey[] = [
   'wingo',
   'colourPrediction',
   'lotteryGame',
+  'aviator',
+  'chickenRoad',
+  'cricket',
+  'goal',
+  'vortex',
   'faq',
   'about',
   'contact',

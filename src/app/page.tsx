@@ -4,6 +4,7 @@ import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { PageSchema } from '@/components/layout/PageSchema';
 import { Hero } from '@/components/home/Hero';
 import { StatsCounter } from '@/components/home/StatsCounter';
+import { QuickFacts } from '@/components/home/QuickFacts';
 import { Benefits } from '@/components/home/Benefits';
 import { HowItWorks } from '@/components/home/HowItWorks';
 import { GamesShowcase } from '@/components/home/GamesShowcase';
@@ -34,6 +35,7 @@ export default function HomePage() {
       <Breadcrumb items={[{ name: 'Home', path: '/' }]} />
       <Hero />
       <StatsCounter />
+      <QuickFacts />
       <HowItWorks />
       <Benefits />
       <GamesShowcase />

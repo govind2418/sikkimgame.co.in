@@ -44,7 +44,13 @@ export const FOOTER_LINKS: NavLink[] = [
   { label: 'Refer & Earn', href: '/refer-earn' },
   { label: 'Wingo', href: '/wingo' },
   { label: 'Colour Prediction', href: '/colour-prediction' },
+  // Games
   { label: 'Lottery Game', href: '/lottery-game' },
+  { label: 'Aviator', href: '/aviator' },
+  { label: 'Chicken Road 2', href: '/chicken-road-2' },
+  { label: 'Cricket', href: '/cricket' },
+  { label: 'Goal', href: '/goal' },
+  { label: 'Vortex', href: '/vortex' },
   // Support & Company
   { label: 'Customer Care', href: '/customer-care' },
   { label: 'FAQ', href: '/faq' },
