@@ -18,7 +18,7 @@ export const metadata: Metadata = buildMetadata({
   title: 'Contact Sikkim Game 2026 | Support & Guide Hub',
   description:
     'Reach sikkimgame.co.in for content questions or corrections. For account and payment issues, use official in-app support instead.',
-  path: '/contact',
+  path: '/contact-us',
   keywords: ['Contact Sikkim Game'],
 });
 
@@ -28,9 +28,9 @@ export default function ContactPage() {
       <PageSchema
         title="Contact Sikkim Game 2026 | Support & Guide Hub"
         description="Reach sikkimgame.co.in for content questions or corrections. For account and payment issues, use official in-app support instead."
-        path="/contact"
+        path="/contact-us"
       />
-      <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact' }]} />
+      <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact-us' }]} />
       <PageHero
         eyebrow="Contact"
         title="Get in touch"

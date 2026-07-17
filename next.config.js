@@ -16,6 +16,13 @@ const nextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      { source: '/terms', destination: '/terms-and-conditions', permanent: true },
+      { source: '/gift-code', destination: '/game-gift-code', permanent: true },
+      { source: '/contact', destination: '/contact-us', permanent: true },
+    ];
+  },
 };
 
 module.exports = nextConfig;

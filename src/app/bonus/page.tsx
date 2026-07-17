@@ -55,7 +55,7 @@ export default function BonusPage() {
           <CtaButton href="/invite-code" external={false} variant="secondary" size="lg">
             <TicketIcon className="h-4 w-4" /> Invite Code Guide
           </CtaButton>
-          <CtaButton href="/gift-code" external={false} variant="ghost" size="lg">
+          <CtaButton href="/game-gift-code" external={false} variant="ghost" size="lg">
             Gift Code Guide
           </CtaButton>
         </div>

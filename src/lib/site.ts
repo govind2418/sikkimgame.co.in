@@ -38,19 +38,21 @@ export const FOOTER_LINKS: NavLink[] = [
   { label: 'APK Guide', href: '/apk-guide' },
   // Codes & Rewards
   { label: 'Invite Code', href: '/invite-code' },
-  { label: 'Gift Code', href: '/gift-code' },
+  { label: 'Gift Code', href: '/game-gift-code' },
   { label: 'Bonus', href: '/bonus' },
   { label: 'Withdrawal', href: '/withdrawal' },
   { label: 'Refer & Earn', href: '/refer-earn' },
   { label: 'Wingo', href: '/wingo' },
   { label: 'Colour Prediction', href: '/colour-prediction' },
+  { label: 'Lottery Game', href: '/lottery-game' },
   // Support & Company
   { label: 'Customer Care', href: '/customer-care' },
   { label: 'FAQ', href: '/faq' },
   { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'Contact', href: '/contact-us' },
+  { label: 'Responsible Gaming', href: '/responsible-gaming' },
   { label: 'Privacy Policy', href: '/privacy-policy' },
-  { label: 'Terms & Conditions', href: '/terms' },
+  { label: 'Terms & Conditions', href: '/terms-and-conditions' },
   { label: 'Disclaimer', href: '/disclaimer' },
 ];
 

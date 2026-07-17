@@ -13,7 +13,7 @@ export const metadata: Metadata = buildMetadata({
   title: 'Sikkim Game Terms & Conditions 2026',
   description:
     'Terms and Conditions for using sikkimgame.co.in, an independent Sikkim Game information and referral resource.',
-  path: '/terms',
+  path: '/terms-and-conditions',
   keywords: ['Sikkim Game Terms and Conditions'],
 });
 
@@ -23,9 +23,11 @@ export default function TermsPage() {
       <PageSchema
         title="Sikkim Game Terms & Conditions 2026"
         description="Terms and Conditions for using sikkimgame.co.in, an independent Sikkim Game information and referral resource."
-        path="/terms"
+        path="/terms-and-conditions"
       />
-      <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Terms', path: '/terms' }]} />
+      <Breadcrumb
+        items={[{ name: 'Home', path: '/' }, { name: 'Terms & Conditions', path: '/terms-and-conditions' }]}
+      />
       <PageHero
         eyebrow="Legal"
         title="Terms & Conditions"

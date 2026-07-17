@@ -14,9 +14,11 @@ export type PageKey =
   | 'customerCare'
   | 'wingo'
   | 'colourPrediction'
+  | 'lotteryGame'
   | 'faq'
   | 'about'
   | 'contact'
+  | 'responsibleGaming'
   | 'privacyPolicy'
   | 'terms'
   | 'disclaimer';
@@ -30,18 +32,20 @@ export const PAGES: Record<PageKey, { label: string; href: string }> = {
   apkGuide: { label: 'APK Guide', href: '/apk-guide' },
   howToRegister: { label: 'How to Register', href: '/how-to-register' },
   inviteCode: { label: 'Invite Code', href: '/invite-code' },
-  giftCode: { label: 'Gift Code', href: '/gift-code' },
+  giftCode: { label: 'Gift Code', href: '/game-gift-code' },
   bonus: { label: 'Bonus', href: '/bonus' },
   withdrawal: { label: 'Withdrawal', href: '/withdrawal' },
   referEarn: { label: 'Refer & Earn', href: '/refer-earn' },
   customerCare: { label: 'Customer Care', href: '/customer-care' },
   wingo: { label: 'Wingo', href: '/wingo' },
   colourPrediction: { label: 'Colour Prediction', href: '/colour-prediction' },
+  lotteryGame: { label: 'Lottery Game', href: '/lottery-game' },
   faq: { label: 'FAQ', href: '/faq' },
   about: { label: 'About', href: '/about' },
-  contact: { label: 'Contact', href: '/contact' },
+  contact: { label: 'Contact', href: '/contact-us' },
+  responsibleGaming: { label: 'Responsible Gaming', href: '/responsible-gaming' },
   privacyPolicy: { label: 'Privacy Policy', href: '/privacy-policy' },
-  terms: { label: 'Terms & Conditions', href: '/terms' },
+  terms: { label: 'Terms & Conditions', href: '/terms-and-conditions' },
   disclaimer: { label: 'Disclaimer', href: '/disclaimer' },
 };
 
@@ -64,9 +68,11 @@ export const PAGE_RING: PageKey[] = [
   'customerCare',
   'wingo',
   'colourPrediction',
+  'lotteryGame',
   'faq',
   'about',
   'contact',
+  'responsibleGaming',
   'privacyPolicy',
   'terms',
   'disclaimer',

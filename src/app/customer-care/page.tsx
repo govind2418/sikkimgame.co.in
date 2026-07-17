@@ -59,7 +59,7 @@ export default function CustomerCarePage() {
             <h3 className="mt-3 text-base font-semibold text-white">What we can&apos;t do</h3>
             <p className="mt-2 text-sm text-slate-300">
               sikkimgame.co.in is independent and has no access to accounts or funds. Our own{' '}
-              <CtaButton href="/contact" external={false} variant="ghost" size="md" className="px-0" showArrow={false}>
+              <CtaButton href="/contact-us" external={false} variant="ghost" size="md" className="px-0" showArrow={false}>
                 Contact page
               </CtaButton>{' '}
               is for site content only.

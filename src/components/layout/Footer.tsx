@@ -25,7 +25,7 @@ export function Footer() {
           <div>
             <p className="mb-3 text-sm font-semibold text-white">Codes & Rewards</p>
             <ul className="space-y-2">
-              {FOOTER_LINKS.slice(7, 14).map((link) => (
+              {FOOTER_LINKS.slice(7, 15).map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-sm text-slate-400 hover:text-neon-400">
                     {link.label}
@@ -37,7 +37,7 @@ export function Footer() {
           <div>
             <p className="mb-3 text-sm font-semibold text-white">Support & Company</p>
             <ul className="space-y-2">
-              {FOOTER_LINKS.slice(14).map((link) => (
+              {FOOTER_LINKS.slice(15).map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-sm text-slate-400 hover:text-neon-400">
                     {link.label}

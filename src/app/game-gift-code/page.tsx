@@ -17,7 +17,7 @@ export const metadata: Metadata = buildMetadata({
   title: 'Sikkim Game Gift Code 2026 | Redeem & Bonus Official Guide',
   description:
     'How Sikkim Game gift codes work, exactly where to redeem them, and the warning signs of a fake code offer.',
-  path: '/gift-code',
+  path: '/game-gift-code',
   keywords: ['Sikkim Game Gift Code', 'Sikkim Game Redeem Code'],
 });
 
@@ -34,9 +34,11 @@ export default function GiftCodePage() {
       <PageSchema
         title="Sikkim Game Gift Code 2026 | Redeem & Bonus Official Guide"
         description="How Sikkim Game gift codes work, exactly where to redeem them, and the warning signs of a fake code offer."
-        path="/gift-code"
+        path="/game-gift-code"
       />
-      <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Gift Code', path: '/gift-code' }]} />
+      <Breadcrumb
+        items={[{ name: 'Home', path: '/' }, { name: 'Gift Code', path: '/game-gift-code' }]}
+      />
       <PageHero
         eyebrow="Gift Codes"
         title="Redeeming a Sikkim Game gift code, step by step"

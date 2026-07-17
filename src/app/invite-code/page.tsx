@@ -69,7 +69,7 @@ export default function InviteCodePage() {
           <CtaButton href={SITE.registerUrl} variant="primary" size="lg">
             Sign Up With a Code
           </CtaButton>
-          <CtaButton href="/gift-code" external={false} variant="secondary" size="lg">
+          <CtaButton href="/game-gift-code" external={false} variant="secondary" size="lg">
             Looking for Gift Codes Instead?
           </CtaButton>
         </div>
@@ -81,7 +81,7 @@ export default function InviteCodePage() {
           People mix these up constantly since both are short strings typed into the app. An
           invite code is entered once, at sign-up, and tracks a referral. A gift code is redeemed
           afterward from a rewards menu to claim one specific bonus. See our{' '}
-          <CtaButton href="/gift-code" external={false} variant="ghost" size="md" className="px-0" showArrow={false}>
+          <CtaButton href="/game-gift-code" external={false} variant="ghost" size="md" className="px-0" showArrow={false}>
             Gift Code guide
           </CtaButton>{' '}
           for that side of things, or our{' '}
