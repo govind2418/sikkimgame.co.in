@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { FaqAccordion } from '@/components/ui/FaqAccordion';
@@ -9,16 +10,21 @@ import { relatedTo } from '@/lib/pages';
 import { termsFaqs, termsSections } from '@/lib/content/terms';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Terms & Conditions',
+  title: 'Sikkim Game Terms & Conditions 2026',
   description:
     'Terms and Conditions for using sikkimgame.co.in, an independent Sikkim Game information and referral resource.',
   path: '/terms',
-  keywords: ['Sikkim Game Zone Terms and Conditions'],
+  keywords: ['Sikkim Game Terms and Conditions'],
 });
 
 export default function TermsPage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game Terms & Conditions 2026"
+        description="Terms and Conditions for using sikkimgame.co.in, an independent Sikkim Game information and referral resource."
+        path="/terms"
+      />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Terms', path: '/terms' }]} />
       <PageHero
         eyebrow="Legal"

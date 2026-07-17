@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
@@ -11,16 +12,21 @@ import { AlertTriangleIcon } from '@/components/icons';
 import { disclaimerSections, disclaimerFaqs } from '@/lib/content/disclaimer';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Disclaimer',
+  title: 'Sikkim Game Disclaimer 2026',
   description:
     'The full sikkimgame.co.in disclaimer: independence from the operator and the Government of Sikkim, financial risk, and affiliate relationships.',
   path: '/disclaimer',
-  keywords: ['Sikkim Game Zone Disclaimer'],
+  keywords: ['Sikkim Game Disclaimer'],
 });
 
 export default function DisclaimerPage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game Disclaimer 2026"
+        description="The full sikkimgame.co.in disclaimer: independence from the Sikkim Game operator and the Government of Sikkim, financial risk, and affiliate relationships."
+        path="/disclaimer"
+      />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Disclaimer', path: '/disclaimer' }]} />
       <PageHero
         eyebrow="Legal"

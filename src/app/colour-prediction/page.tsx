@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
@@ -14,7 +15,7 @@ import { ShieldIcon, ZapIcon, GridIcon } from '@/components/icons';
 import { colourPredictionFaqs } from '@/lib/content/colourPrediction';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game Colour Prediction — How Rounds Really Work',
+  title: 'Sikkim Game Colour Prediction 2026 | Rules & Payout Guide',
   description:
     'A clear, no-hype explanation of Sikkim Game Colour Prediction rounds, payouts, and the scam patterns to watch for.',
   path: '/colour-prediction',
@@ -24,6 +25,11 @@ export const metadata: Metadata = buildMetadata({
 export default function ColourPredictionPage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game Colour Prediction 2026 | Rules & Payout Guide"
+        description="A clear, no-hype explanation of Sikkim Game Colour Prediction rounds, payouts, and the scam patterns to watch for."
+        path="/colour-prediction"
+      />
       <Breadcrumb
         items={[
           { name: 'Home', path: '/' },

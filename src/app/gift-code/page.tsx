@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
@@ -13,7 +14,7 @@ import { PercentIcon, ShieldIcon } from '@/components/icons';
 import { giftCodeFaqs } from '@/lib/content/giftCode';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game Gift Code — Redeem It the Right Way',
+  title: 'Sikkim Game Gift Code 2026 | Redeem & Bonus Official Guide',
   description:
     'How Sikkim Game gift codes work, exactly where to redeem them, and the warning signs of a fake code offer.',
   path: '/gift-code',
@@ -30,6 +31,11 @@ const redeemSteps = [
 export default function GiftCodePage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game Gift Code 2026 | Redeem & Bonus Official Guide"
+        description="How Sikkim Game gift codes work, exactly where to redeem them, and the warning signs of a fake code offer."
+        path="/gift-code"
+      />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Gift Code', path: '/gift-code' }]} />
       <PageHero
         eyebrow="Gift Codes"

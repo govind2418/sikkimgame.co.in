@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { FaqAccordion } from '@/components/ui/FaqAccordion';
@@ -10,7 +11,7 @@ import { relatedTo } from '@/lib/pages';
 import { faqGroups } from '@/lib/content/faq';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game FAQ — All Questions in One Place',
+  title: 'Sikkim Game FAQ 2026 | Login, Register & Bonus Questions',
   description:
     'Every common Sikkim Game question grouped by topic: accounts, bonuses and codes, game modes, and safety and legality.',
   path: '/faq',
@@ -20,6 +21,11 @@ export const metadata: Metadata = buildMetadata({
 export default function FaqPage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game FAQ 2026 | Login, Register & Bonus Questions"
+        description="Every common Sikkim Game question grouped by topic: accounts, bonuses and codes, game modes, and safety and legality."
+        path="/faq"
+      />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'FAQ', path: '/faq' }]} />
       <PageHero
         eyebrow="FAQ"

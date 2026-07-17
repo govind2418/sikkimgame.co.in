@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
@@ -14,16 +15,21 @@ import { contactFaqs } from '@/lib/content/contact';
 import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Contact Sikkim Game Zone',
+  title: 'Contact Sikkim Game 2026 | Support & Guide Hub',
   description:
     'Reach sikkimgame.co.in for content questions or corrections. For account and payment issues, use official in-app support instead.',
   path: '/contact',
-  keywords: ['Contact Sikkim Game Zone'],
+  keywords: ['Contact Sikkim Game'],
 });
 
 export default function ContactPage() {
   return (
     <>
+      <PageSchema
+        title="Contact Sikkim Game 2026 | Support & Guide Hub"
+        description="Reach sikkimgame.co.in for content questions or corrections. For account and payment issues, use official in-app support instead."
+        path="/contact"
+      />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact' }]} />
       <PageHero
         eyebrow="Contact"

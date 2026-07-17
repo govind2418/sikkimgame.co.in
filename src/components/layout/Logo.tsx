@@ -19,7 +19,7 @@ export function Logo({ className = '' }: { className?: string }) {
         <circle cx="15" cy="9.4" r="1.6" fill="#f0fbff" />
       </svg>
       <span className="text-base font-extrabold tracking-tight text-white">
-        Sikkim <span className="text-neon-400">Game Zone</span>
+        Sikkim <span className="text-neon-400">Game</span>
       </span>
     </span>
   );

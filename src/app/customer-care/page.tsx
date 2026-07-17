@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
@@ -13,7 +14,7 @@ import { HeadsetIcon, FileTextIcon, ShieldIcon } from '@/components/icons';
 import { customerCareFaqs } from '@/lib/content/customerCare';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game Customer Care — Official Support Channels',
+  title: 'Sikkim Game Customer Care 2026 | Support & Withdrawal Guide',
   description:
     'How to reach official Sikkim Game customer care for account, deposit or withdrawal issues, and what sikkimgame.co.in can and cannot help with.',
   path: '/customer-care',
@@ -23,6 +24,11 @@ export const metadata: Metadata = buildMetadata({
 export default function CustomerCarePage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game Customer Care 2026 | Support & Withdrawal Guide"
+        description="How to reach official Sikkim Game customer care for account, deposit or withdrawal issues, and what sikkimgame.co.in can and cannot help with."
+        path="/customer-care"
+      />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Customer Care', path: '/customer-care' }]} />
       <PageHero
         eyebrow="Customer Care"

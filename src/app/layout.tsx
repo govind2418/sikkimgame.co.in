@@ -43,7 +43,6 @@ export const metadata: Metadata = {
   },
   keywords: [
     'Sikkim Game',
-    'Sikkim Game Zone',
     'sikkimgame.co.in',
     'Sikkim Game Login',
     'Sikkim Game Register',

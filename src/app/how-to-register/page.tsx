@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
@@ -14,7 +15,7 @@ import { howToRegisterSteps, howToRegisterFaqs } from '@/lib/content/howToRegist
 import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'How to Register on Sikkim Game — Full Walkthrough',
+  title: 'Sikkim Game Register Guide 2026 | Sign-Up & Invite Code',
   description:
     'Every screen of the Sikkim Game sign-up form explained: mobile number, OTP, password and the optional invite code field.',
   path: '/how-to-register',
@@ -24,6 +25,11 @@ export const metadata: Metadata = buildMetadata({
 export default function HowToRegisterPage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game Register Guide 2026 | Sign-Up & Invite Code"
+        description="Every screen of the Sikkim Game sign-up form explained: mobile number, OTP, password and the optional invite code field."
+        path="/how-to-register"
+      />
       <Breadcrumb
         items={[{ name: 'Home', path: '/' }, { name: 'How to Register', path: '/how-to-register' }]}
       />

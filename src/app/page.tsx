@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { Hero } from '@/components/home/Hero';
 import { StatsCounter } from '@/components/home/StatsCounter';
 import { Benefits } from '@/components/home/Benefits';
@@ -15,16 +16,21 @@ import { relatedTo } from '@/lib/pages';
 import { homeFaqs } from '@/lib/content/home';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game Zone — Sign In, Sign Up, APK & Bonus Code Guides',
+  title: 'Sikkim Game 2026 | Login, Register & Download Guide',
   description:
-    'Sikkim Game Zone: independent sign-in and sign-up help, APK setup, bonus/invite/gift code guides, and plain-English Wingo & Colour Prediction breakdowns.',
+    'Sikkim Game: independent sign-in and sign-up help, APK setup, bonus/invite/gift code guides, and plain-English Wingo & Colour Prediction breakdowns.',
   path: '/',
-  keywords: ['Sikkim Game Zone', 'Sikkim Game Login', 'Sikkim Game Register', 'Sikkim Game Download'],
+  keywords: ['Sikkim Game Login', 'Sikkim Game Register', 'Sikkim Game Download'],
 });
 
 export default function HomePage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game 2026 | Login, Register & Download Guide"
+        description="Sikkim Game: independent sign-in and sign-up help, APK setup, bonus/invite/gift code guides, and plain-English Wingo & Colour Prediction breakdowns."
+        path="/"
+      />
       <Breadcrumb items={[{ name: 'Home', path: '/' }]} />
       <Hero />
       <StatsCounter />

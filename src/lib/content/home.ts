@@ -2,9 +2,9 @@ import type { FaqItem } from '@/lib/schema';
 
 export const homeFaqs: FaqItem[] = [
   {
-    question: 'What exactly is Sikkim Game Zone?',
+    question: 'What exactly is Sikkim Game?',
     answer:
-      'Sikkim Game Zone is a reader-focused guide site covering Sikkim Game Login, Sikkim Game Register, APK installation, bonus and invite codes, and plain-English breakdowns of Wingo and Colour Prediction rounds. We are not the game operator — think of us as a fast reference before you open the official app.',
+      'Sikkim Game (sikkimgame.co.in) is a reader-focused guide site covering Sikkim Game Login, Sikkim Game Register, APK installation, bonus and invite codes, and plain-English breakdowns of Wingo and Colour Prediction rounds. We are not the game operator — think of us as a fast reference before you open the official app.',
   },
   {
     question: 'Do you run the game or hold my account details?',

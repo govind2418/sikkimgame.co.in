@@ -11,7 +11,6 @@ type BuildMetadataArgs = {
 
 const BASE_KEYWORDS = [
   'Sikkim Game',
-  'Sikkim Game Zone',
   'sikkimgame.co.in',
   'Sikkim Game Login',
   'Sikkim Game Register',
@@ -24,7 +23,7 @@ const BASE_KEYWORDS = [
 
 export function buildMetadata({ title, description, path, keywords, ogTitle }: BuildMetadataArgs): Metadata {
   const url = `${SITE.url}${path}`;
-  const fullTitle = path === '/' ? title : `${title} | ${SITE.name}`;
+  const fullTitle = title;
   const ogImageUrl = `${SITE.url}/og?title=${encodeURIComponent(ogTitle ?? title)}`;
   const allKeywords = Array.from(new Set([...(keywords ?? []), ...BASE_KEYWORDS]));
 

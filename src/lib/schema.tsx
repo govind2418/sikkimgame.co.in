@@ -46,6 +46,80 @@ export function faqPageSchema(items: FaqItem[]) {
   };
 }
 
+export function webPageSchema({
+  name,
+  description,
+  path,
+}: {
+  name: string;
+  description: string;
+  path: string;
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name,
+    description,
+    url: `${SITE.url}${path}`,
+    inLanguage: 'en-IN',
+    isPartOf: {
+      '@type': 'WebSite',
+      name: SITE.name,
+      url: SITE.url,
+    },
+    about: {
+      '@type': 'Thing',
+      name: 'Sikkim Game',
+    },
+  };
+}
+
+export function articleSchema({
+  headline,
+  description,
+  path,
+  datePublished = '2026-01-01',
+  dateModified = '2026-01-01',
+}: {
+  headline: string;
+  description: string;
+  path: string;
+  datePublished?: string;
+  dateModified?: string;
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline,
+    description,
+    url: `${SITE.url}${path}`,
+    image: `${SITE.url}/images/brand/app-icon-512.png`,
+    datePublished,
+    dateModified,
+    author: {
+      '@type': 'Organization',
+      name: SITE.name,
+      url: SITE.url,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: SITE.name,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE.url}/images/brand/app-icon-512.png`,
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${SITE.url}${path}`,
+    },
+    about: {
+      '@type': 'Thing',
+      name: 'Sikkim Game',
+    },
+  };
+}
+
 export function breadcrumbSchema(items: BreadcrumbItem[]) {
   return {
     '@context': 'https://schema.org',

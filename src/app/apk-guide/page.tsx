@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
@@ -13,7 +14,7 @@ import { ShieldIcon, FileTextIcon } from '@/components/icons';
 import { apkChecklist, apkGuideFaqs } from '@/lib/content/apkGuide';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game APK Guide — Verify Before You Install',
+  title: 'Sikkim Game APK Guide 2026 | Safe Install & Download Tips',
   description:
     'What an APK file actually is, why this game category distributes one directly, and a four-point checklist to verify it before installing.',
   path: '/apk-guide',
@@ -23,6 +24,11 @@ export const metadata: Metadata = buildMetadata({
 export default function ApkGuidePage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game APK Guide 2026 | Safe Install & Download Tips"
+        description="What an APK file actually is, why this game category distributes one directly, and a four-point checklist to verify it before installing."
+        path="/apk-guide"
+      />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'APK Guide', path: '/apk-guide' }]} />
       <PageHero
         eyebrow="APK Safety"

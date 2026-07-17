@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
@@ -14,7 +15,7 @@ import { ShieldIcon, GridIcon, ZapIcon } from '@/components/icons';
 import { wingoFaqs } from '@/lib/content/wingo';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game Wingo — Rules, Bet Types & Timers',
+  title: 'Sikkim Game Wingo 2026 | Rules, Bet Types & Timer Guide',
   description:
     'How Sikkim Game Wingo actually works: number, colour and size bets, round timing, and a few responsible-play habits worth keeping.',
   path: '/wingo',
@@ -24,6 +25,11 @@ export const metadata: Metadata = buildMetadata({
 export default function WingoPage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game Wingo 2026 | Rules, Bet Types & Timer Guide"
+        description="How Sikkim Game Wingo actually works: number, colour and size bets, round timing, and a few responsible-play habits worth keeping."
+        path="/wingo"
+      />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Wingo', path: '/wingo' }]} />
       <PageHero
         eyebrow="Wingo"

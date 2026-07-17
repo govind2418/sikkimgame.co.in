@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
@@ -13,16 +14,21 @@ import { aboutFaqs } from '@/lib/content/about';
 import { DISCLAIMER } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'About Sikkim Game Zone',
+  title: 'About Sikkim Game 2026 | Independent Guide Hub',
   description:
     'sikkimgame.co.in is an independent Sikkim Game guide hub covering sign-in, sign-up, downloads and game rules. Here is who we are.',
   path: '/about',
-  keywords: ['About Sikkim Game Zone'],
+  keywords: ['About Sikkim Game'],
 });
 
 export default function AboutPage() {
   return (
     <>
+      <PageSchema
+        title="About Sikkim Game 2026 | Independent Guide Hub"
+        description="sikkimgame.co.in is an independent Sikkim Game guide hub covering sign-in, sign-up, downloads and game rules. Here is who we are."
+        path="/about"
+      />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'About', path: '/about' }]} />
       <PageHero
         eyebrow="About Us"

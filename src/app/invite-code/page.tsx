@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
@@ -14,7 +15,7 @@ import { inviteCodeFaqs } from '@/lib/content/inviteCode';
 import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game Invite Code — What It Does & Where It Goes',
+  title: 'Sikkim Game Invite Code 2026 | Register & Bonus Guide',
   description:
     'What a Sikkim Game invite code actually does, where to enter it at sign-up, and how to spot a fake one.',
   path: '/invite-code',
@@ -24,6 +25,11 @@ export const metadata: Metadata = buildMetadata({
 export default function InviteCodePage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game Invite Code 2026 | Register & Bonus Guide"
+        description="What a Sikkim Game invite code actually does, where to enter it at sign-up, and how to spot a fake one."
+        path="/invite-code"
+      />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Invite Code', path: '/invite-code' }]} />
       <PageHero
         eyebrow="Invite Code"

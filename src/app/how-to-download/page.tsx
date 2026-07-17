@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
@@ -14,7 +15,7 @@ import { howToDownloadSteps, howToDownloadFaqs } from '@/lib/content/howToDownlo
 import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'How to Download Sikkim Game — Full Install Walkthrough',
+  title: 'Sikkim Game APK Download 2026 | Install Guide Step-by-Step',
   description:
     'Every step of installing the Sikkim Game APK on Android, from the official download link to opening the app for the first time.',
   path: '/how-to-download',
@@ -24,6 +25,11 @@ export const metadata: Metadata = buildMetadata({
 export default function HowToDownloadPage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game APK Download 2026 | Install Guide Step-by-Step"
+        description="Every step of installing the Sikkim Game APK on Android, from the official download link to opening the app for the first time."
+        path="/how-to-download"
+      />
       <Breadcrumb
         items={[{ name: 'Home', path: '/' }, { name: 'How to Download', path: '/how-to-download' }]}
       />

@@ -1,33 +1,10 @@
 import type { MetadataRoute } from 'next';
 import { SITE } from '@/lib/site';
-
-const routes = [
-  '',
-  '/login',
-  '/register',
-  '/download',
-  '/how-to-register',
-  '/how-to-download',
-  '/apk-guide',
-  '/invite-code',
-  '/gift-code',
-  '/bonus',
-  '/withdrawal',
-  '/refer-earn',
-  '/colour-prediction',
-  '/wingo',
-  '/faq',
-  '/about',
-  '/contact',
-  '/customer-care',
-  '/privacy-policy',
-  '/terms',
-  '/disclaimer',
-];
+import { SITE_ROUTES } from '@/lib/routes';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
-  return routes.map((path) => ({
+  return SITE_ROUTES.map((path) => ({
     url: `${SITE.url}${path}`,
     lastModified,
     changeFrequency: path === '' ? 'daily' : 'weekly',

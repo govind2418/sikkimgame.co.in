@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
@@ -16,7 +17,7 @@ import { SITE } from '@/lib/site';
 import appIcon from '../../../public/images/brand/app-icon-512.png';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game Download — Get the App or Use the Web Version',
+  title: 'Sikkim Game Download 2026 | APK & Register Official Guide',
   description:
     'Where to get Sikkim Game on Android or through your browser, plus links to our detailed install and APK safety guides.',
   path: '/download',
@@ -26,6 +27,11 @@ export const metadata: Metadata = buildMetadata({
 export default function DownloadPage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game Download 2026 | APK & Register Official Guide"
+        description="Where to get Sikkim Game on Android or through your browser, plus links to our detailed install and APK safety guides."
+        path="/download"
+      />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Download', path: '/download' }]} />
       <PageHero
         eyebrow="Get the App"
@@ -73,7 +79,7 @@ export default function DownloadPage() {
               height={120}
               className="mx-auto rounded-3xl shadow-glow"
             />
-            <p className="mt-4 text-sm font-semibold text-white">Sikkim Game Zone</p>
+            <p className="mt-4 text-sm font-semibold text-white">Sikkim Game</p>
             <p className="text-xs text-slate-400">Android APK · Mobile Web</p>
           </div>
         </div>

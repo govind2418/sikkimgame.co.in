@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
@@ -14,7 +15,7 @@ import { bonusTypes, bonusFaqs } from '@/lib/content/bonus';
 import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game Bonus — Every Reward Type Explained',
+  title: 'Sikkim Game Bonus 2026 | Invite Code & Gift Code Guide',
   description:
     'A plain overview of Sikkim Game bonuses: welcome offers, referral rewards, gift codes and promotional credits, plus how to spot a bonus scam.',
   path: '/bonus',
@@ -24,6 +25,11 @@ export const metadata: Metadata = buildMetadata({
 export default function BonusPage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game Bonus 2026 | Invite Code & Gift Code Guide"
+        description="A plain overview of Sikkim Game bonuses: welcome offers, referral rewards, gift codes and promotional credits, plus how to spot a bonus scam."
+        path="/bonus"
+      />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Bonus', path: '/bonus' }]} />
       <PageHero
         eyebrow="Bonus Guide"

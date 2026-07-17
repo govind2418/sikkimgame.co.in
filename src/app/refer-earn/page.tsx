@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
@@ -13,7 +14,7 @@ import { UsersIcon, TicketIcon, CoinsIcon } from '@/components/icons';
 import { referEarnSteps, referEarnFaqs } from '@/lib/content/referEarn';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game Refer & Earn — Share Your Code, Earn Rewards',
+  title: 'Sikkim Game Refer & Earn 2026 | Invite Code Official Guide',
   description:
     'How Sikkim Game Refer & Earn works: finding your own referral code, sharing it, and when the reward is actually credited.',
   path: '/refer-earn',
@@ -23,6 +24,11 @@ export const metadata: Metadata = buildMetadata({
 export default function ReferEarnPage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game Refer & Earn 2026 | Invite Code Official Guide"
+        description="How Sikkim Game Refer & Earn works: finding your own referral code, sharing it, and when the reward is actually credited."
+        path="/refer-earn"
+      />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Refer & Earn', path: '/refer-earn' }]} />
       <PageHero
         eyebrow="Refer & Earn"

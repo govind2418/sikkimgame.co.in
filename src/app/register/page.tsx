@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
@@ -14,7 +15,7 @@ import { registerFaqs, registerSteps } from '@/lib/content/register';
 import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game Register — Create an Account in Under a Minute',
+  title: 'Sikkim Game Register 2026 | Login & Download Official Guide',
   description:
     'Quick Sikkim Game sign-up overview: what you need, how invite codes fit in, and what to check before you register.',
   path: '/register',
@@ -24,6 +25,11 @@ export const metadata: Metadata = buildMetadata({
 export default function RegisterPage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game Register 2026 | Login & Download Official Guide"
+        description="Quick Sikkim Game sign-up overview: what you need, how invite codes fit in, and what to check before you register."
+        path="/register"
+      />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Register', path: '/register' }]} />
       <PageHero
         eyebrow="Sign Up"

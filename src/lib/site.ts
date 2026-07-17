@@ -1,10 +1,10 @@
 export const SITE = {
-  name: 'Sikkim Game Zone',
+  name: 'Sikkim Game',
   domain: 'sikkimgame.co.in',
   url: 'https://sikkimgame.co.in',
-  legalName: 'Sikkim Game Zone Network',
+  legalName: 'Sikkim Game Network',
   description:
-    'Sikkim Game Zone is a fast, unofficial player resource for sign-in, sign-up, APK setup, bonus and invite codes, plus clear Wingo and Colour Prediction breakdowns — everything before you touch the official app.',
+    'Sikkim Game is a fast, unofficial player resource for sign-in, sign-up, APK setup, bonus and invite codes, plus clear Wingo and Colour Prediction breakdowns — everything before you touch the official app.',
   officialUrl: 'https://sikkimgg.live/#/',
   registerUrl: 'https://sikkimgg.live/#/register?invitationCode=448445788742',
   contactEmail: 'connect@sikkimgame.co.in',
@@ -55,4 +55,4 @@ export const FOOTER_LINKS: NavLink[] = [
 ];
 
 export const DISCLAIMER =
-  'Sikkim Game Zone (sikkimgame.co.in) is an independent, reader-supported resource and is not the game operator. Nothing here implies backing from, partnership with, or endorsement by the Government of Sikkim or any state authority — the word "Sikkim" is used only because that is what players call this game category. Every sign-up, deposit, game round and withdrawal happens on the official operator\'s own platform, never through this website. We take no payments, run no game rounds, and cannot promise any outcome. Real-money gaming laws differ by Indian state, so confirm what is permitted where you live before joining. You must be 18 or older, and we encourage playing only with money you can afford to lose.';
+  'Sikkim Game (sikkimgame.co.in) is an independent, reader-supported resource and is not the game operator. Nothing here implies backing from, partnership with, or endorsement by the Government of Sikkim or any state authority — the word "Sikkim" is used only because that is what players call this game category. Every sign-up, deposit, game round and withdrawal happens on the official operator\'s own platform, never through this website. We take no payments, run no game rounds, and cannot promise any outcome. Real-money gaming laws differ by Indian state, so confirm what is permitted where you live before joining. You must be 18 or older, and we encourage playing only with money you can afford to lose.';

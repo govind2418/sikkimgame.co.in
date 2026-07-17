@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
@@ -13,7 +14,7 @@ import { CoinsIcon, ShieldIcon } from '@/components/icons';
 import { withdrawalSteps, withdrawalFaqs } from '@/lib/content/withdrawal';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game Withdrawal — How Cashouts Typically Work',
+  title: 'Sikkim Game Withdrawal 2026 | Bonus & Customer Care Guide',
   description:
     'A plain overview of how Sikkim Game withdrawals work: where to request one, typical processing time, and how to avoid withdrawal scams.',
   path: '/withdrawal',
@@ -23,6 +24,11 @@ export const metadata: Metadata = buildMetadata({
 export default function WithdrawalPage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game Withdrawal 2026 | Bonus & Customer Care Guide"
+        description="A plain overview of how Sikkim Game withdrawals work: where to request one, typical processing time, and how to avoid withdrawal scams."
+        path="/withdrawal"
+      />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Withdrawal', path: '/withdrawal' }]} />
       <PageHero
         eyebrow="Withdrawal"

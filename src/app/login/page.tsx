@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { PageSchema } from '@/components/layout/PageSchema';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
@@ -14,7 +15,7 @@ import { loginFaqs, loginSteps } from '@/lib/content/login';
 import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game Login — Sign In Without the Hassle',
+  title: 'Sikkim Game Login 2026 | Register & Download Official Guide',
   description:
     'A quick, clear guide to signing in to Sikkim Game — plus fixes for the login errors people run into most often.',
   path: '/login',
@@ -24,6 +25,11 @@ export const metadata: Metadata = buildMetadata({
 export default function LoginPage() {
   return (
     <>
+      <PageSchema
+        title="Sikkim Game Login 2026 | Register & Download Official Guide"
+        description="A quick, clear guide to signing in to Sikkim Game — plus fixes for the login errors people run into most often."
+        path="/login"
+      />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Login', path: '/login' }]} />
       <PageHero
         eyebrow="Sign In"
