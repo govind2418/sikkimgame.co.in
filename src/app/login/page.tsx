@@ -7,6 +7,8 @@ import { Card } from '@/components/ui/Card';
 import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { CtaBand } from '@/components/home/CtaBand';
 import { CtaButton } from '@/components/ui/Button';
+import { RelatedLinks } from '@/components/layout/RelatedLinks';
+import { relatedTo } from '@/lib/pages';
 import { LoginIcon, ShieldIcon } from '@/components/icons';
 import { loginFaqs, loginSteps } from '@/lib/content/login';
 import { SITE } from '@/lib/site';
@@ -88,6 +90,8 @@ export default function LoginPage() {
         <SectionHeading eyebrow="FAQs" title="Login questions, answered" />
         <FaqAccordion items={loginFaqs} />
       </Section>
+
+      <RelatedLinks keys={relatedTo('login')} />
 
       <Section>
         <CtaBand

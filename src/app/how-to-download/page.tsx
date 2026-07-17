@@ -7,6 +7,8 @@ import { Card } from '@/components/ui/Card';
 import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { CtaBand } from '@/components/home/CtaBand';
 import { CtaButton } from '@/components/ui/Button';
+import { RelatedLinks } from '@/components/layout/RelatedLinks';
+import { relatedTo } from '@/lib/pages';
 import { DownloadIcon, FileTextIcon } from '@/components/icons';
 import { howToDownloadSteps, howToDownloadFaqs } from '@/lib/content/howToDownload';
 import { SITE } from '@/lib/site';
@@ -60,6 +62,8 @@ export default function HowToDownloadPage() {
         <SectionHeading eyebrow="FAQs" title="Install questions, answered" />
         <FaqAccordion items={howToDownloadFaqs} />
       </Section>
+
+      <RelatedLinks keys={relatedTo('howToDownload')} />
 
       <Section>
         <CtaBand

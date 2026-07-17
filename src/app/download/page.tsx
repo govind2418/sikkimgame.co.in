@@ -8,6 +8,8 @@ import { Card } from '@/components/ui/Card';
 import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { CtaBand } from '@/components/home/CtaBand';
 import { CtaButton } from '@/components/ui/Button';
+import { RelatedLinks } from '@/components/layout/RelatedLinks';
+import { relatedTo } from '@/lib/pages';
 import { DownloadIcon, FileTextIcon, BookOpenIcon } from '@/components/icons';
 import { downloadFaqs } from '@/lib/content/download';
 import { SITE } from '@/lib/site';
@@ -81,6 +83,8 @@ export default function DownloadPage() {
         <SectionHeading eyebrow="FAQs" title="Download questions, answered" />
         <FaqAccordion items={downloadFaqs} />
       </Section>
+
+      <RelatedLinks keys={relatedTo('download')} />
 
       <Section>
         <CtaBand

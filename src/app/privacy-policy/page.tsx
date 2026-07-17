@@ -4,6 +4,8 @@ import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { FaqAccordion } from '@/components/ui/FaqAccordion';
+import { RelatedLinks } from '@/components/layout/RelatedLinks';
+import { relatedTo } from '@/lib/pages';
 import { privacyFaqs, privacySections } from '@/lib/content/privacy';
 
 export const metadata: Metadata = buildMetadata({
@@ -41,6 +43,8 @@ export default function PrivacyPolicyPage() {
         <SectionHeading eyebrow="FAQs" title="Privacy Policy — frequently asked questions" />
         <FaqAccordion items={privacyFaqs} />
       </Section>
+
+      <RelatedLinks keys={relatedTo('privacyPolicy')} />
     </>
   );
 }

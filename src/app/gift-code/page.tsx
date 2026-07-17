@@ -7,6 +7,8 @@ import { Card } from '@/components/ui/Card';
 import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { CtaBand } from '@/components/home/CtaBand';
 import { CtaButton } from '@/components/ui/Button';
+import { RelatedLinks } from '@/components/layout/RelatedLinks';
+import { relatedTo } from '@/lib/pages';
 import { PercentIcon, ShieldIcon } from '@/components/icons';
 import { giftCodeFaqs } from '@/lib/content/giftCode';
 
@@ -75,6 +77,8 @@ export default function GiftCodePage() {
         <SectionHeading eyebrow="FAQs" title="Gift code questions, answered" />
         <FaqAccordion items={giftCodeFaqs} />
       </Section>
+
+      <RelatedLinks keys={relatedTo('giftCode')} />
 
       <Section>
         <CtaBand

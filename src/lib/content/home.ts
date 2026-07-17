@@ -2,9 +2,9 @@ import type { FaqItem } from '@/lib/schema';
 
 export const homeFaqs: FaqItem[] = [
   {
-    question: 'What exactly is sikkimgame.co.in?',
+    question: 'What exactly is Sikkim Game Zone?',
     answer:
-      'Sikkim Game Zone is a reader-focused guide site covering sign-in, sign-up, APK installation, bonus and invite codes, and plain-English breakdowns of Wingo and Colour Prediction rounds. We are not the game operator — think of us as a fast reference before you open the official app.',
+      'Sikkim Game Zone is a reader-focused guide site covering Sikkim Game Login, Sikkim Game Register, APK installation, bonus and invite codes, and plain-English breakdowns of Wingo and Colour Prediction rounds. We are not the game operator — think of us as a fast reference before you open the official app.',
   },
   {
     question: 'Do you run the game or hold my account details?',
@@ -12,9 +12,14 @@ export const homeFaqs: FaqItem[] = [
       'No. We never handle deposits, withdrawals, passwords or account data. Every real action — creating an account, adding funds, placing a round — happens on the official operator platform that our buttons link out to.',
   },
   {
-    question: 'What is the fastest way to get set up?',
+    question: 'Should I use Sikkim Game Login or Register first?',
     answer:
-      'Start with our How to Download guide to get the app, then follow How to Register for a walkthrough of the sign-up form. Both take a few minutes combined.',
+      'If you already have an account, go straight to Login. First time here, start with Download to get the app, then Register — the whole sign-up form takes under a minute once the app is installed.',
+  },
+  {
+    question: 'Where do I find details on Bonus and Invite Code offers?',
+    answer:
+      'Our Bonus guide breaks down every reward type, and our Invite Code guide covers exactly where that field sits during sign-up and how to spot a fake one. Neither ever requires a fee or your OTP to work.',
   },
   {
     question: 'How current is the information on this site?',

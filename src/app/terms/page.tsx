@@ -4,6 +4,8 @@ import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { FaqAccordion } from '@/components/ui/FaqAccordion';
+import { RelatedLinks } from '@/components/layout/RelatedLinks';
+import { relatedTo } from '@/lib/pages';
 import { termsFaqs, termsSections } from '@/lib/content/terms';
 
 export const metadata: Metadata = buildMetadata({
@@ -39,6 +41,8 @@ export default function TermsPage() {
         <SectionHeading eyebrow="FAQs" title="Terms & Conditions — frequently asked questions" />
         <FaqAccordion items={termsFaqs} />
       </Section>
+
+      <RelatedLinks keys={relatedTo('terms')} />
     </>
   );
 }

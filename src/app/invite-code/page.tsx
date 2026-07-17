@@ -7,6 +7,8 @@ import { Card } from '@/components/ui/Card';
 import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { CtaBand } from '@/components/home/CtaBand';
 import { CtaButton } from '@/components/ui/Button';
+import { RelatedLinks } from '@/components/layout/RelatedLinks';
+import { relatedTo } from '@/lib/pages';
 import { TicketIcon, ShieldIcon, UsersIcon } from '@/components/icons';
 import { inviteCodeFaqs } from '@/lib/content/inviteCode';
 import { SITE } from '@/lib/site';
@@ -88,6 +90,8 @@ export default function InviteCodePage() {
         <SectionHeading eyebrow="FAQs" title="Invite code questions, answered" />
         <FaqAccordion items={inviteCodeFaqs} />
       </Section>
+
+      <RelatedLinks keys={relatedTo('inviteCode')} />
 
       <Section>
         <CtaBand

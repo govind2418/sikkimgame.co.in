@@ -28,6 +28,7 @@ export const NAV_LINKS: NavLink[] = [
 ];
 
 export const FOOTER_LINKS: NavLink[] = [
+  // Get Started
   { label: 'Home', href: '/' },
   { label: 'Login', href: '/login' },
   { label: 'Register', href: '/register' },
@@ -35,11 +36,16 @@ export const FOOTER_LINKS: NavLink[] = [
   { label: 'How to Register', href: '/how-to-register' },
   { label: 'How to Download', href: '/how-to-download' },
   { label: 'APK Guide', href: '/apk-guide' },
+  // Codes & Rewards
   { label: 'Invite Code', href: '/invite-code' },
   { label: 'Gift Code', href: '/gift-code' },
   { label: 'Bonus', href: '/bonus' },
+  { label: 'Withdrawal', href: '/withdrawal' },
+  { label: 'Refer & Earn', href: '/refer-earn' },
   { label: 'Wingo', href: '/wingo' },
   { label: 'Colour Prediction', href: '/colour-prediction' },
+  // Support & Company
+  { label: 'Customer Care', href: '/customer-care' },
   { label: 'FAQ', href: '/faq' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },

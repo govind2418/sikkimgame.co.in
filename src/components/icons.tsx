@@ -211,6 +211,17 @@ export function QuoteIcon({ className }: IconProps) {
   );
 }
 
+export function HeadsetIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M4 13a8 8 0 0 1 16 0" />
+      <rect x="3" y="13" width="4" height="6" rx="1.5" />
+      <rect x="17" y="13" width="4" height="6" rx="1.5" />
+      <path d="M20 19v1a3 3 0 0 1-3 3h-3" />
+    </svg>
+  );
+}
+
 export function UsersIcon({ className }: IconProps) {
   return (
     <svg {...base} className={className}>

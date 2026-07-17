@@ -8,6 +8,8 @@ import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { CtaBand } from '@/components/home/CtaBand';
 import { CtaButton } from '@/components/ui/Button';
 import { ColourWheelIllustration } from '@/components/home/ColourWheel';
+import { RelatedLinks } from '@/components/layout/RelatedLinks';
+import { relatedTo } from '@/lib/pages';
 import { ShieldIcon, ZapIcon, GridIcon } from '@/components/icons';
 import { colourPredictionFaqs } from '@/lib/content/colourPrediction';
 
@@ -92,6 +94,8 @@ export default function ColourPredictionPage() {
         <SectionHeading eyebrow="FAQs" title="Colour Prediction questions, answered" />
         <FaqAccordion items={colourPredictionFaqs} />
       </Section>
+
+      <RelatedLinks keys={relatedTo('colourPrediction')} />
 
       <Section>
         <CtaBand

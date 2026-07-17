@@ -7,6 +7,8 @@ import { Card } from '@/components/ui/Card';
 import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { CtaBand } from '@/components/home/CtaBand';
 import { CtaButton } from '@/components/ui/Button';
+import { RelatedLinks } from '@/components/layout/RelatedLinks';
+import { relatedTo } from '@/lib/pages';
 import { ShieldIcon, FileTextIcon } from '@/components/icons';
 import { apkChecklist, apkGuideFaqs } from '@/lib/content/apkGuide';
 
@@ -53,6 +55,8 @@ export default function ApkGuidePage() {
         <SectionHeading eyebrow="FAQs" title="APK questions, answered" />
         <FaqAccordion items={apkGuideFaqs} />
       </Section>
+
+      <RelatedLinks keys={relatedTo('apkGuide')} />
 
       <Section>
         <CtaBand

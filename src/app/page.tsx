@@ -10,6 +10,8 @@ import { CtaBand } from '@/components/home/CtaBand';
 import { Testimonials } from '@/components/home/Testimonials';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { FaqAccordion } from '@/components/ui/FaqAccordion';
+import { RelatedLinks } from '@/components/layout/RelatedLinks';
+import { relatedTo } from '@/lib/pages';
 import { homeFaqs } from '@/lib/content/home';
 
 export const metadata: Metadata = buildMetadata({
@@ -38,6 +40,7 @@ export default function HomePage() {
         />
         <FaqAccordion items={homeFaqs} />
       </Section>
+      <RelatedLinks keys={relatedTo('home')} />
       <Section>
         <CtaBand />
       </Section>

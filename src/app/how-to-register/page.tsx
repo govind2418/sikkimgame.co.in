@@ -7,6 +7,8 @@ import { Card } from '@/components/ui/Card';
 import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { CtaBand } from '@/components/home/CtaBand';
 import { CtaButton } from '@/components/ui/Button';
+import { RelatedLinks } from '@/components/layout/RelatedLinks';
+import { relatedTo } from '@/lib/pages';
 import { UserPlusIcon } from '@/components/icons';
 import { howToRegisterSteps, howToRegisterFaqs } from '@/lib/content/howToRegister';
 import { SITE } from '@/lib/site';
@@ -60,6 +62,8 @@ export default function HowToRegisterPage() {
         <SectionHeading eyebrow="FAQs" title="Registration questions, answered" />
         <FaqAccordion items={howToRegisterFaqs} />
       </Section>
+
+      <RelatedLinks keys={relatedTo('howToRegister')} />
 
       <Section>
         <CtaBand

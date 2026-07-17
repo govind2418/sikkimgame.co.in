@@ -7,6 +7,8 @@ import { Card } from '@/components/ui/Card';
 import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { CtaBand } from '@/components/home/CtaBand';
 import { CtaButton } from '@/components/ui/Button';
+import { RelatedLinks } from '@/components/layout/RelatedLinks';
+import { relatedTo } from '@/lib/pages';
 import { PercentIcon, TicketIcon, ShieldIcon } from '@/components/icons';
 import { bonusTypes, bonusFaqs } from '@/lib/content/bonus';
 import { SITE } from '@/lib/site';
@@ -70,6 +72,8 @@ export default function BonusPage() {
         <SectionHeading eyebrow="FAQs" title="Bonus questions, answered" />
         <FaqAccordion items={bonusFaqs} />
       </Section>
+
+      <RelatedLinks keys={relatedTo('bonus')} />
 
       <Section>
         <CtaBand

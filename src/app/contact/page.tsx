@@ -7,6 +7,8 @@ import { Card } from '@/components/ui/Card';
 import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { CtaBand } from '@/components/home/CtaBand';
 import { CtaButton } from '@/components/ui/Button';
+import { RelatedLinks } from '@/components/layout/RelatedLinks';
+import { relatedTo } from '@/lib/pages';
 import { ShieldIcon } from '@/components/icons';
 import { contactFaqs } from '@/lib/content/contact';
 import { SITE } from '@/lib/site';
@@ -61,6 +63,8 @@ export default function ContactPage() {
         <SectionHeading eyebrow="FAQs" title="Contact — frequently asked questions" />
         <FaqAccordion items={contactFaqs} />
       </Section>
+
+      <RelatedLinks keys={relatedTo('contact')} />
 
       <Section>
         <CtaBand />

@@ -6,6 +6,8 @@ import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
 import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { CtaBand } from '@/components/home/CtaBand';
+import { RelatedLinks } from '@/components/layout/RelatedLinks';
+import { relatedTo } from '@/lib/pages';
 import { ShieldIcon, ZapIcon, UsersIcon } from '@/components/icons';
 import { aboutFaqs } from '@/lib/content/about';
 import { DISCLAIMER } from '@/lib/site';
@@ -83,6 +85,8 @@ export default function AboutPage() {
         <SectionHeading eyebrow="FAQs" title="About us — frequently asked questions" />
         <FaqAccordion items={aboutFaqs} />
       </Section>
+
+      <RelatedLinks keys={relatedTo('about')} />
 
       <Section>
         <CtaBand />

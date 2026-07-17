@@ -5,6 +5,8 @@ import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
 import { FaqAccordion } from '@/components/ui/FaqAccordion';
+import { RelatedLinks } from '@/components/layout/RelatedLinks';
+import { relatedTo } from '@/lib/pages';
 import { AlertTriangleIcon } from '@/components/icons';
 import { disclaimerSections, disclaimerFaqs } from '@/lib/content/disclaimer';
 
@@ -44,6 +46,8 @@ export default function DisclaimerPage() {
         <SectionHeading eyebrow="FAQs" title="Disclaimer — frequently asked questions" />
         <FaqAccordion items={disclaimerFaqs} />
       </Section>
+
+      <RelatedLinks keys={relatedTo('disclaimer')} />
     </>
   );
 }

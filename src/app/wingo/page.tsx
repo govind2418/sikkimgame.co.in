@@ -8,6 +8,8 @@ import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { CtaBand } from '@/components/home/CtaBand';
 import { CtaButton } from '@/components/ui/Button';
 import { WingoBoardIllustration } from '@/components/home/WingoBoard';
+import { RelatedLinks } from '@/components/layout/RelatedLinks';
+import { relatedTo } from '@/lib/pages';
 import { ShieldIcon, GridIcon, ZapIcon } from '@/components/icons';
 import { wingoFaqs } from '@/lib/content/wingo';
 
@@ -87,6 +89,8 @@ export default function WingoPage() {
         <SectionHeading eyebrow="FAQs" title="Wingo questions, answered" />
         <FaqAccordion items={wingoFaqs} />
       </Section>
+
+      <RelatedLinks keys={relatedTo('wingo')} />
 
       <Section>
         <CtaBand

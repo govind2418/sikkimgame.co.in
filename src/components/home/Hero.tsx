@@ -15,9 +15,9 @@ export function Hero() {
             Your quick-start desk for Sikkim Game
           </h1>
           <p className="mt-5 max-w-xl text-lg text-slate-300">
-            One clean stop for sign-in help, APK setup, bonus and invite codes, and honest
-            explainers on how Wingo and Colour Prediction rounds are actually structured —
-            written before you ever open the official app, not after.
+            One clean stop for Sikkim Game Login, Sikkim Game Register, APK download, bonus
+            codes and invite codes, plus honest explainers on how Wingo and Colour Prediction
+            rounds actually work — written before you open the official app, not after.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <CtaButton href={SITE.registerUrl} size="lg">Create Account</CtaButton>

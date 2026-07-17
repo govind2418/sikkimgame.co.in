@@ -5,6 +5,8 @@ import { PageHero } from '@/components/layout/PageHero';
 import { Section, SectionHeading } from '@/components/ui/Section';
 import { FaqAccordion } from '@/components/ui/FaqAccordion';
 import { CtaBand } from '@/components/home/CtaBand';
+import { RelatedLinks } from '@/components/layout/RelatedLinks';
+import { relatedTo } from '@/lib/pages';
 import { faqGroups } from '@/lib/content/faq';
 
 export const metadata: Metadata = buildMetadata({
@@ -35,6 +37,8 @@ export default function FaqPage() {
           <FaqAccordion items={group.items} />
         </Section>
       ))}
+
+      <RelatedLinks keys={relatedTo('faq')} />
 
       <Section>
         <CtaBand />
