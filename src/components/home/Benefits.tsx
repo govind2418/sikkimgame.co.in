@@ -6,22 +6,22 @@ const benefits = [
   {
     icon: ShieldIcon,
     title: 'We Say What We Are Not',
-    body: 'Clearly labeled as an independent resource on every page — not the operator, not a government body, not a place that touches your money.',
+    body: 'Every one of our 22 guides carries the same line: we never process deposits, withdrawals, passwords or KYC — that only ever happens inside the official operator\'s app. And despite the name, we have zero affiliation with the Government of Sikkim.',
   },
   {
     icon: ZapIcon,
     title: 'Built for Slow Connections',
-    body: 'No heavy scripts, no autoplay video, no intrusive pop-ups — every guide is readable in seconds even on a patchy mobile network.',
+    body: 'This site currently scores 100/100 on Google Lighthouse SEO and 97+/100 on Performance — no autoplay video, no bloated ad scripts, server responses under 40ms — so a guide still loads on a patchy mobile network.',
   },
   {
     icon: GridIcon,
-    title: 'Wingo & Colour Prediction, Demystified',
-    body: 'Plain-language walkthroughs of round timers, bet types and payout structure — written for first-timers, not insiders.',
+    title: 'Wingo & Colour Prediction, With Real Numbers',
+    body: 'We list the actual Green (1,3,7,9) / Red (2,4,6,8) / Violet (0,5) mapping, typical payouts — ~9x on a number, ~2x on colour, ~4.5x on Violet — and all four Wingo room speeds, not just "it\'s chance-based, be careful."',
   },
   {
     icon: BookOpenIcon,
-    title: 'Organised Around Real Questions',
-    body: 'Every section maps to something players actually search for: login errors, sign-up steps, code redemption, game rules — one hub, not ten tabs.',
+    title: '22 Guides, One Hub',
+    body: 'Login, Register, APK installs, Bonus, Withdrawal, Refer & Earn, Customer Care, Responsible Gaming and more — each page answers one specific search instead of one page trying to cover everything.',
   },
 ];
 

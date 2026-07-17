@@ -1,7 +1,7 @@
 import { Counter } from '@/components/ui/Counter';
 
 const stats = [
-  { target: 19, suffix: '+', label: 'In-Depth Guides' },
+  { target: 22, suffix: '+', label: 'In-Depth Guides' },
   { target: 100, suffix: '%', label: 'Independent, Unpaid Reviews' },
   { target: 3, suffix: ' min', label: 'Avg. Read to Get Set Up' },
   { target: 24, suffix: '/7', label: 'Guides Online' },
