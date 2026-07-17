@@ -36,7 +36,7 @@ export default function HowToDownloadPage() {
       <PageHero
         eyebrow="Full Guide"
         title="How to download and install Sikkim Game"
-        intro="Six steps from tapping the download link to landing on your account dashboard, plus what to do when Android blocks the install."
+        intro="Six steps from tapping the Sikkim Game download link to landing on your account dashboard, plus what to do when Android blocks the Sikkim Game install."
       />
 
       <Section>

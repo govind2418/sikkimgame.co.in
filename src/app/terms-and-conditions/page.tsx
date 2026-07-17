@@ -30,8 +30,8 @@ export default function TermsPage() {
       />
       <PageHero
         eyebrow="Legal"
-        title="Terms & Conditions"
-        intro="Please read before using sikkimgame.co.in. These terms apply only to this website, not the official Sikkim Game operator's platform."
+        title="Sikkim Game Terms & Conditions"
+        intro="Please read before using this Sikkim Game guide site. These terms apply only to this website, not the official Sikkim Game operator's platform."
       />
 
       <Section>

@@ -31,9 +31,9 @@ export default function ApkGuidePage() {
       />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'APK Guide', path: '/apk-guide' }]} />
       <PageHero
-        eyebrow="APK Safety"
-        title="Before you install: an APK checklist worth thirty seconds"
-        intro="APK installs are routine for this game category, but not all files circulating online are the real one. Here is what to check."
+        eyebrow="Sikkim Game APK Safety"
+        title="Before you install Sikkim Game: an APK checklist worth thirty seconds"
+        intro="A Sikkim Game APK install is routine for this game category, but not all files circulating online are the real one. Here is what to check before installing Sikkim Game."
       />
 
       <Section>

@@ -30,8 +30,8 @@ export default function DisclaimerPage() {
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Disclaimer', path: '/disclaimer' }]} />
       <PageHero
         eyebrow="Legal"
-        title="Disclaimer"
-        intro="Please read this in full before treating anything on this site as advice about the official platform."
+        title="Sikkim Game Disclaimer"
+        intro="Please read this in full before treating anything on this Sikkim Game site as advice about the official platform."
       />
 
       <Section>

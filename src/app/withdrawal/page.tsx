@@ -33,7 +33,7 @@ export default function WithdrawalPage() {
       <PageHero
         eyebrow="Withdrawal"
         title="How a Sikkim Game withdrawal typically works"
-        intro="Every withdrawal happens on the official platform, not here — this is a plain overview of the process, the usual holds, and what to check first."
+        intro="Every Sikkim Game withdrawal happens on the official platform, not here — this is a plain overview of the process, the usual holds, and what to check first."
       />
 
       <Section>

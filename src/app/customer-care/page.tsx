@@ -33,7 +33,7 @@ export default function CustomerCarePage() {
       <PageHero
         eyebrow="Customer Care"
         title="Getting help from official Sikkim Game customer care"
-        intro="For account, deposit or withdrawal issues, official in-app support is the only place that can actually help. Here's how to reach it and what to have ready."
+        intro="For Sikkim Game account, deposit or withdrawal issues, official in-app support is the only place that can actually help. Here's how to reach Sikkim Game support and what to have ready."
       />
 
       <Section>

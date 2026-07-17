@@ -28,9 +28,9 @@ export default function FaqPage() {
       />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'FAQ', path: '/faq' }]} />
       <PageHero
-        eyebrow="FAQ"
-        title="Every question we get, grouped by topic"
-        intro="Can't find something here? The Contact page reaches us directly for anything we have missed."
+        eyebrow="Sikkim Game FAQ"
+        title="Every Sikkim Game question we get, grouped by topic"
+        intro="Can't find what you need about Sikkim Game here? The Contact page reaches us directly for anything we have missed."
       />
 
       {faqGroups.map((group, index) => (

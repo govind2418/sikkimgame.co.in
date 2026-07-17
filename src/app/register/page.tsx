@@ -34,7 +34,7 @@ export default function RegisterPage() {
       <PageHero
         eyebrow="Sign Up"
         title="Create your Sikkim Game account in under a minute"
-        intro="A short overview of what the sign-up form asks for. Want every screen walked through in detail? See our full How to Register guide."
+        intro="A short overview of what the Sikkim Game sign-up form asks for. Want every screen walked through in detail? See our full How to Register on Sikkim Game guide."
       />
 
       <Section>

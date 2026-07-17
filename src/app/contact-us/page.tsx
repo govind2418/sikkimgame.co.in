@@ -32,9 +32,9 @@ export default function ContactPage() {
       />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact-us' }]} />
       <PageHero
-        eyebrow="Contact"
-        title="Get in touch"
-        intro="Spotted an outdated guide or a broken link? Tell us below."
+        eyebrow="Contact Sikkim Game"
+        title="Get in touch about our Sikkim Game guides"
+        intro="Spotted an outdated Sikkim Game guide or a broken link? Tell us below."
       />
 
       <Section>

@@ -32,9 +32,9 @@ export default function InviteCodePage() {
       />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Invite Code', path: '/invite-code' }]} />
       <PageHero
-        eyebrow="Invite Code"
-        title="Invite codes, explained without the jargon"
-        intro="A short code, one field on the sign-up form, and a possible welcome bonus. Here's the full picture."
+        eyebrow="Sikkim Game Invite Code"
+        title="Sikkim Game invite codes, explained without the jargon"
+        intro="A short code, one field on the Sikkim Game sign-up form, and a possible welcome bonus. Here's the full picture."
       />
 
       <Section>

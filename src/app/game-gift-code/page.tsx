@@ -42,7 +42,7 @@ export default function GiftCodePage() {
       <PageHero
         eyebrow="Gift Codes"
         title="Redeeming a Sikkim Game gift code, step by step"
-        intro="Four quick steps to claim a reward code — plus how to tell a real one from a scam attempt."
+        intro="Four quick steps to claim a Sikkim Game reward code — plus how to tell a real Sikkim Game gift code from a scam attempt."
       />
 
       <Section>

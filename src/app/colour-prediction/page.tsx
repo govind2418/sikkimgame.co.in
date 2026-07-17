@@ -37,23 +37,23 @@ export default function ColourPredictionPage() {
         ]}
       />
       <PageHero
-        eyebrow="Colour Prediction"
-        title="Colour Prediction, without the sales pitch"
-        intro="One of the most-searched Sikkim Game modes, broken down honestly — including the parts the scam pages won't tell you."
+        eyebrow="Sikkim Game Colour Prediction"
+        title="Sikkim Game Colour Prediction, without the sales pitch"
+        intro="One of the most-searched Sikkim Game modes, broken down honestly — including the parts the scam pages won't tell you about Sikkim Game Colour Prediction."
       />
 
       <Section>
         <div className="grid gap-10 lg:grid-cols-[1fr_280px] lg:items-start">
           <div>
-            <SectionHeading eyebrow="Mechanics" title="The same draw as Wingo, without the number bet" />
+            <SectionHeading eyebrow="Mechanics" title="The same draw as Sikkim Game Wingo, without the number bet" />
             <div className="space-y-4 text-sm leading-relaxed text-slate-300">
               <p>
-                Colour Prediction runs on the same underlying 0–9 number draw used in Wingo — it
-                just hides the number bet and leaves you choosing Green, Red, or Violet. A number
-                is drawn on a fixed timer; 1, 3, 7 and 9 land as Green, 2, 4, 6 and 8 land as Red,
-                and the two remaining numbers, 0 and 5, land as Violet. Because Green and Red each
-                cover four numbers while Violet covers only two, Violet pays a higher multiplier
-                to offset how much less often it actually hits.
+                Sikkim Game Colour Prediction runs on the same underlying 0–9 number draw used in
+                Sikkim Game Wingo — it just hides the number bet and leaves you choosing Green,
+                Red, or Violet. A number is drawn on a fixed timer; 1, 3, 7 and 9 land as Green, 2,
+                4, 6 and 8 land as Red, and the two remaining numbers, 0 and 5, land as Violet.
+                Because Green and Red each cover four numbers while Violet covers only two, Violet
+                pays a higher multiplier to offset how much less often it actually hits.
               </p>
               <p>
                 Timer length, minimum bet and the exact multipliers are set by the official

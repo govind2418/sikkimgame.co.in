@@ -31,9 +31,9 @@ export default function ReferEarnPage() {
       />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Refer & Earn', path: '/refer-earn' }]} />
       <PageHero
-        eyebrow="Refer & Earn"
-        title="Refer & Earn: share your code, earn a reward"
-        intro="Your own referral code, shared with friends, can unlock a reward when they join — here's the mechanic, not the marketing."
+        eyebrow="Sikkim Game Refer & Earn"
+        title="Sikkim Game Refer & Earn: share your code, earn a reward"
+        intro="Your own Sikkim Game referral code, shared with friends, can unlock a reward when they join — here's the mechanic, not the marketing."
       />
 
       <Section>

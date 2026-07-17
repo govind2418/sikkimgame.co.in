@@ -30,8 +30,8 @@ export default function PrivacyPolicyPage() {
       />
       <PageHero
         eyebrow="Legal"
-        title="Privacy Policy"
-        intro="How sikkimgame.co.in handles visitor information. This page does not cover the official Sikkim Game operator's own app or platform."
+        title="Sikkim Game Privacy Policy"
+        intro="How this Sikkim Game guide site handles visitor information. This page does not cover the official Sikkim Game operator's own app or platform."
       />
 
       <Section>

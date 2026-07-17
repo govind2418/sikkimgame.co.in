@@ -34,7 +34,7 @@ export default function BonusPage() {
       <PageHero
         eyebrow="Bonus Guide"
         title="Every Sikkim Game bonus type, in one place"
-        intro="Welcome offers, referrals, redeem codes and promos all use different mechanics. Here is how each one actually works."
+        intro="Sikkim Game welcome offers, referrals, redeem codes and promos all use different mechanics. Here is how each Sikkim Game bonus actually works."
       />
 
       <Section>

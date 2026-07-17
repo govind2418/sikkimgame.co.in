@@ -34,7 +34,7 @@ export default function LoginPage() {
       <PageHero
         eyebrow="Sign In"
         title="Signing in to Sikkim Game shouldn't be the hard part"
-        intro="Most sign-in problems trace back to one of four things. Here's the correct sequence, plus what to check first when it doesn't work."
+        intro="Most Sikkim Game sign-in problems trace back to one of four things. Here's the correct sequence, plus what to check first when Sikkim Game login doesn't work."
       />
 
       <Section>

@@ -37,7 +37,7 @@ export default function ResponsibleGamingPage() {
       <PageHero
         eyebrow="Responsible Gaming"
         title="Playing Sikkim Game responsibly"
-        intro="Wingo, Colour Prediction and every other format on the official platform are chance-based, real-money products — not a skill game and not an income plan. Here is how to keep it entertainment, not a problem."
+        intro="Sikkim Game Wingo, Colour Prediction and every other format on the official platform are chance-based, real-money products — not a skill game and not an income plan. Here is how to keep Sikkim Game entertainment, not a problem."
       />
 
       <Section>

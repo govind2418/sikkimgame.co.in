@@ -36,7 +36,7 @@ export default function HowToRegisterPage() {
       <PageHero
         eyebrow="Full Guide"
         title="How to register on Sikkim Game, screen by screen"
-        intro="Seven steps that cover the entire sign-up form, including the two places most people get stuck: OTP delivery and the invite code field."
+        intro="Seven steps that cover the entire Sikkim Game sign-up form, including the two places most people get stuck: OTP delivery and the Sikkim Game invite code field."
       />
 
       <Section>
