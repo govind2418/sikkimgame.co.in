@@ -9,14 +9,14 @@ const games = [
     name: 'Wingo',
     body: 'A rapid-fire number, colour and size format where every round closes on a fixed timer. We break down bet types and how results are revealed.',
     href: '/wingo',
-    cta: 'Read the Wingo Guide',
+    cta: 'Sikkim Game Wingo Guide',
   },
   {
     icon: PaletteIcon,
     name: 'Colour Prediction',
     body: 'Choose a colour before the round locks and see how the payout table is typically structured — explained before you risk anything.',
     href: '/colour-prediction',
-    cta: 'Read the Colour Prediction Guide',
+    cta: 'Sikkim Game Colour Prediction Guide',
   },
 ];
 

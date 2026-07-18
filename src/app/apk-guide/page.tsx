@@ -49,7 +49,7 @@ export default function ApkGuidePage() {
         </div>
         <div className="mt-8 flex flex-wrap gap-3">
           <CtaButton href="/how-to-download" external={false} variant="primary" size="lg">
-            <FileTextIcon className="h-4 w-4" /> Full Install Steps
+            <FileTextIcon className="h-4 w-4" /> Download Sikkim Game APK Steps
           </CtaButton>
           <CtaButton href="/download" external={false} variant="secondary" size="lg">
             Back to Download

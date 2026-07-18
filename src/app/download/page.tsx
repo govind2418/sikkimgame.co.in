@@ -64,7 +64,7 @@ export default function DownloadPage() {
                 <DownloadIcon className="h-4 w-4" /> Get the App
               </CtaButton>
               <CtaButton href="/how-to-download" external={false} variant="secondary" size="lg">
-                Full Install Walkthrough
+                Sikkim Game Download Walkthrough
               </CtaButton>
               <CtaButton href="/apk-guide" external={false} variant="ghost" size="lg">
                 <FileTextIcon className="h-4 w-4" /> APK Safety Guide

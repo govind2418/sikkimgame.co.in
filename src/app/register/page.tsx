@@ -57,7 +57,7 @@ export default function RegisterPage() {
             <UserPlusIcon className="h-4 w-4" /> Create Account
           </CtaButton>
           <CtaButton href="/how-to-register" external={false} variant="secondary" size="lg">
-            Full Step-by-Step Guide
+            Sikkim Game Register Step-by-Step Guide
           </CtaButton>
           <CtaButton href="/invite-code" external={false} variant="ghost" size="lg">
             <TicketIcon className="h-4 w-4" /> Have an invite code?
