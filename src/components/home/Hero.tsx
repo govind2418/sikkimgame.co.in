@@ -9,7 +9,7 @@ export function Hero() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:py-20 lg:grid-cols-2 lg:items-center lg:gap-8">
         <div className="animate-fadeIn">
           <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-neon-400/30 bg-neon-400/5 px-4 py-1.5 text-xs font-semibold text-neon-300">
-            sikkimgame.co.in — reader-run guide hub
+            Sikkim Game — independent guide hub
           </p>
           <h1 className="text-4xl font-extrabold leading-tight text-white sm:text-5xl">
             Sikkim Game Login, Register &amp; Download Guide (2026)
