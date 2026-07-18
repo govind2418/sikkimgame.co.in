@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { RatingWidget } from '@/components/layout/RatingWidget';
 import { StickyCTA } from '@/components/layout/StickyCTA';
 import { BackgroundFX } from '@/components/layout/BackgroundFX';
 import { JsonLd, organizationSchema, websiteSchema } from '@/lib/schema';
@@ -88,6 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <BackgroundFX />
         <Header />
         <main className="flex-1">{children}</main>
+        <RatingWidget />
         <Footer />
         <StickyCTA />
       </body>
