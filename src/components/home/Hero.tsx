@@ -12,7 +12,7 @@ export function Hero() {
             sikkimgame.co.in — reader-run guide hub
           </p>
           <h1 className="text-4xl font-extrabold leading-tight text-white sm:text-5xl">
-            Your quick-start desk for Sikkim Game
+            Sikkim Game Login, Register &amp; Download Guide (2026)
           </h1>
           <p className="mt-5 max-w-xl text-lg text-slate-300">
             One clean stop for Sikkim Game Login, Sikkim Game Register, APK download, bonus
