@@ -3,6 +3,11 @@ import { SITE } from './site';
 export type FaqItem = { question: string; answer: string };
 export type BreadcrumbItem = { name: string; path: string };
 
+// Computed once when this module loads (i.e. at build time for statically
+// generated pages), so dateModified reflects the actual last build/deploy
+// instead of a hardcoded date that never moves.
+const BUILD_DATE = new Date().toISOString().slice(0, 10);
+
 export function organizationSchema() {
   return {
     '@context': 'https://schema.org',
@@ -79,7 +84,7 @@ export function articleSchema({
   description,
   path,
   datePublished = '2026-01-01',
-  dateModified = '2026-01-01',
+  dateModified = BUILD_DATE,
 }: {
   headline: string;
   description: string;
