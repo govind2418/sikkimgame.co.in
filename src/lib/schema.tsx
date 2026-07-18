@@ -1,4 +1,5 @@
 import { SITE } from './site';
+import { PUBLISH_DATES } from './publishDates';
 
 export type FaqItem = { question: string; answer: string };
 export type BreadcrumbItem = { name: string; path: string };
@@ -83,7 +84,7 @@ export function articleSchema({
   headline,
   description,
   path,
-  datePublished = '2026-01-01',
+  datePublished = PUBLISH_DATES[path] ?? BUILD_DATE,
   dateModified = BUILD_DATE,
 }: {
   headline: string;
