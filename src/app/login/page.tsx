@@ -13,6 +13,8 @@ import { relatedTo } from '@/lib/pages';
 import { LoginIcon, ShieldIcon } from '@/components/icons';
 import { loginFaqs, loginSteps } from '@/lib/content/login';
 import { SITE } from '@/lib/site';
+import { ScreenshotCard } from '@/components/ui/ScreenshotCard';
+import accountImg from '../../../public/images/screenshots/sikkim-game-account.png';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Sikkim Game Login 2026 | Register & Download Official Guide',
@@ -93,7 +95,23 @@ export default function LoginPage() {
         </p>
       </Section>
 
-      <Section id="faq">
+      <Section>
+        <div className="grid gap-10 lg:grid-cols-[280px_1fr] lg:items-center">
+          <ScreenshotCard src={accountImg} alt="Sikkim Game Account dashboard after login" caption="Account dashboard" />
+          <div>
+            <SectionHeading eyebrow="Real screenshot" title="What you'll see right after signing in" />
+            <p className="max-w-2xl text-sm leading-relaxed text-slate-300">
+              Once signed in, the Account screen surfaces everything at a glance — total balance,
+              VIP tier, and quick links to ARWallet, Deposit, Withdraw and VIP status, plus a Safe
+              feature quietly earning 0.1% daily interest. Game History, Transactions, Deposits
+              and Withdrawals each sit one tap away underneath, so there is no hunting through
+              menus once you are past the login screen.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section id="faq" className="border-t border-white/5 bg-navy-900/40">
         <SectionHeading eyebrow="FAQs" title="Login questions, answered" />
         <FaqAccordion items={loginFaqs} />
       </Section>

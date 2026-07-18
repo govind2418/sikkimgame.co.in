@@ -12,6 +12,9 @@ import { RelatedLinks } from '@/components/layout/RelatedLinks';
 import { relatedTo } from '@/lib/pages';
 import { CoinsIcon, ShieldIcon } from '@/components/icons';
 import { withdrawalSteps, withdrawalFaqs } from '@/lib/content/withdrawal';
+import { ScreenshotCard } from '@/components/ui/ScreenshotCard';
+import withdrawImg from '../../../public/images/screenshots/sikkim-game-withdraw.png';
+import walletImg from '../../../public/images/screenshots/sikkim-game-wallet.png';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Sikkim Game Withdrawal 2026 | Bonus & Customer Care Guide',
@@ -79,7 +82,31 @@ export default function WithdrawalPage() {
         </div>
       </Section>
 
-      <Section id="faq" className="border-t border-white/5 bg-navy-900/40">
+      <Section className="border-t border-white/5 bg-navy-900/40">
+        <SectionHeading eyebrow="Real screenshots" title="What the Withdraw and Wallet screens actually look like" />
+        <div className="grid gap-8 sm:grid-cols-2">
+          <div>
+            <ScreenshotCard src={withdrawImg} alt="Sikkim Game Withdraw screen" caption="Withdraw screen" />
+            <p className="mt-4 text-sm leading-relaxed text-slate-300">
+              Withdrawals run through the same rails as deposits — Bank Card, UPI or USDT — with
+              a saved payout method (a TRC-20 USDT address, in this view) ready to go. The
+              available balance sits right at the top of the screen, so there is never any doubt
+              about what is actually eligible to cash out before you submit a request.
+            </p>
+          </div>
+          <div>
+            <ScreenshotCard src={walletImg} alt="Sikkim Game Wallet balance screen" caption="Wallet overview" />
+            <p className="mt-4 text-sm leading-relaxed text-slate-300">
+              The Wallet screen keeps a running total of both total withdrawal amount and total
+              deposit amount alongside the current balance, split visually between the Main
+              wallet and any 3rd party wallet. A one-tap Main wallet transfer moves funds between
+              the two before you request a payout.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section id="faq">
         <SectionHeading eyebrow="FAQs" title="Withdrawal questions, answered" />
         <FaqAccordion items={withdrawalFaqs} />
       </Section>

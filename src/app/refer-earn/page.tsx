@@ -12,6 +12,9 @@ import { RelatedLinks } from '@/components/layout/RelatedLinks';
 import { relatedTo } from '@/lib/pages';
 import { UsersIcon, TicketIcon, CoinsIcon } from '@/components/icons';
 import { referEarnSteps, referEarnFaqs } from '@/lib/content/referEarn';
+import { ScreenshotCard } from '@/components/ui/ScreenshotCard';
+import agencyImg from '../../../public/images/screenshots/sikkim-game-agency-dashboard.png';
+import rewardsImg from '../../../public/images/screenshots/sikkim-game-partner-rewards.png';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Sikkim Game Refer & Earn 2026 | Invite Code Official Guide',
@@ -92,7 +95,33 @@ export default function ReferEarnPage() {
         </ol>
       </Section>
 
-      <Section id="faq">
+      <Section>
+        <SectionHeading eyebrow="Real screenshots" title="What the Agency dashboard and reward tiers actually look like" />
+        <div className="grid gap-8 sm:grid-cols-2">
+          <div>
+            <ScreenshotCard src={agencyImg} alt="Sikkim Game Agency referral dashboard" caption="Agency dashboard" />
+            <p className="mt-4 text-sm leading-relaxed text-slate-300">
+              Your Agency dashboard is where the Refer & Earn numbers actually live —
+              yesterday&apos;s commission total up top, then a split between Direct subordinates
+              and Team subordinates, each tracking registrations, deposit counts and deposit
+              amounts separately. The Invitation Link button sits front and center, ready to
+              share the moment you want to start earning.
+            </p>
+          </div>
+          <div>
+            <ScreenshotCard src={rewardsImg} alt="Sikkim Game Partner Rewards bonus tier table" caption="Partner rewards table" />
+            <p className="mt-4 text-sm leading-relaxed text-slate-300">
+              The Partner Rewards table spells out exactly what a referral is worth: each of a
+              friend&apos;s first three deposits unlocks its own bonus tier, scaling from a modest
+              ₹10 on a small first deposit up to ₹500 once someone deposits ₹10,000 or more with
+              matching turnover. One bonus per deposit — no stacking, no fine print beyond what is
+              shown on the screen itself.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section id="faq" className="border-t border-white/5 bg-navy-900/40">
         <SectionHeading eyebrow="FAQs" title="Refer & Earn questions, answered" />
         <FaqAccordion items={referEarnFaqs} />
       </Section>

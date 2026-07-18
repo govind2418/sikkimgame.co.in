@@ -13,6 +13,9 @@ import { relatedTo } from '@/lib/pages';
 import { PercentIcon, TicketIcon, ShieldIcon } from '@/components/icons';
 import { bonusTypes, bonusFaqs } from '@/lib/content/bonus';
 import { SITE } from '@/lib/site';
+import { ScreenshotCard } from '@/components/ui/ScreenshotCard';
+import activityImg from '../../../public/images/screenshots/sikkim-game-bonus-activity.png';
+import depositImg from '../../../public/images/screenshots/sikkim-game-deposit.png';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Sikkim Game Bonus 2026 | Invite Code & Gift Code Guide',
@@ -74,7 +77,32 @@ export default function BonusPage() {
         </Card>
       </Section>
 
-      <Section id="faq">
+      <Section>
+        <SectionHeading eyebrow="Real screenshots" title="What the Activity and Deposit bonus screens look like" />
+        <div className="grid gap-8 sm:grid-cols-2">
+          <div>
+            <ScreenshotCard src={activityImg} alt="Sikkim Game Activity bonus screen" caption="Activity rewards" />
+            <p className="mt-4 text-sm leading-relaxed text-slate-300">
+              The Activity tab is the platform&apos;s rewards hub in miniature: Activity Award,
+              Invitation bonus, Betting rebate and Super Jackpot sit alongside redeemable Gifts
+              and a login-streak Attendance bonus. A recurring Monthly 3-Day Special — a 3%
+              recharge bonus on the 7th, 17th and 27th — rewards players who keep coming back on
+              schedule rather than depositing once and disappearing.
+            </p>
+          </div>
+          <div>
+            <ScreenshotCard src={depositImg} alt="Sikkim Game Deposit screen with 2% bonus" caption="Deposit bonus" />
+            <p className="mt-4 text-sm leading-relaxed text-slate-300">
+              Funding an account runs through UPI x QR, QR Pay, Online Pay, NOW UPI, USDT or
+              ARPay, and every channel shown here currently carries a flat 2% deposit bonus.
+              Individual channels like Phonepe_QR list their own balance range up front — ₹100 to
+              ₹50,000 in this case — so there is no guessing before you commit to an amount.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section id="faq" className="border-t border-white/5 bg-navy-900/40">
         <SectionHeading eyebrow="FAQs" title="Bonus questions, answered" />
         <FaqAccordion items={bonusFaqs} />
       </Section>

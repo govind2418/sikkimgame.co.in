@@ -6,6 +6,7 @@ import { Hero } from '@/components/home/Hero';
 import { TableOfContents } from '@/components/home/TableOfContents';
 import { StatsCounter } from '@/components/home/StatsCounter';
 import { QuickFacts } from '@/components/home/QuickFacts';
+import { PlatformShowcase } from '@/components/home/PlatformShowcase';
 import { Benefits } from '@/components/home/Benefits';
 import { HowItWorks } from '@/components/home/HowItWorks';
 import { GamesShowcase } from '@/components/home/GamesShowcase';
@@ -47,6 +48,7 @@ export default function HomePage() {
       <TableOfContents />
       <StatsCounter />
       <QuickFacts />
+      <PlatformShowcase />
       <HowItWorks />
       <Benefits />
       <GamesShowcase />
