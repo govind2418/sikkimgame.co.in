@@ -29,6 +29,7 @@ export default function LoginPage() {
         title="Sikkim Game Login 2026 | Register & Download Official Guide"
         description="A quick, clear guide to signing in to Sikkim Game — plus fixes for the login errors people run into most often."
         path="/login"
+        howToSteps={loginSteps}
       />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Login', path: '/login' }]} />
       <PageHero

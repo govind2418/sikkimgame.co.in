@@ -29,6 +29,7 @@ export default function HowToRegisterPage() {
         title="Sikkim Game Register Guide 2026 | Sign-Up & Invite Code"
         description="Every screen of the Sikkim Game sign-up form explained: mobile number, OTP, password and the optional invite code field."
         path="/how-to-register"
+        howToSteps={howToRegisterSteps}
       />
       <Breadcrumb
         items={[{ name: 'Home', path: '/' }, { name: 'How to Register', path: '/how-to-register' }]}

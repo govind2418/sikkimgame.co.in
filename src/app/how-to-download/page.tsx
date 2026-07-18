@@ -29,6 +29,7 @@ export default function HowToDownloadPage() {
         title="Sikkim Game APK Download 2026 | Install Guide Step-by-Step"
         description="Every step of installing the Sikkim Game APK on Android, from the official download link to opening the app for the first time."
         path="/how-to-download"
+        howToSteps={howToDownloadSteps}
       />
       <Breadcrumb
         items={[{ name: 'Home', path: '/' }, { name: 'How to Download', path: '/how-to-download' }]}

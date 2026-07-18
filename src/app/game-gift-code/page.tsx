@@ -35,6 +35,7 @@ export default function GiftCodePage() {
         title="Sikkim Game Gift Code 2026 | Redeem & Bonus Official Guide"
         description="How Sikkim Game gift codes work, exactly where to redeem them, and the warning signs of a fake code offer."
         path="/game-gift-code"
+        howToSteps={redeemSteps}
       />
       <Breadcrumb
         items={[{ name: 'Home', path: '/' }, { name: 'Gift Code', path: '/game-gift-code' }]}

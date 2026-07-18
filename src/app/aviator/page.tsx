@@ -28,6 +28,7 @@ export default function AviatorPage() {
         title="Sikkim Game Aviator 2026 | Multiplier & Cash-Out Guide"
         description="Sikkim Game Aviator explained: how the rising multiplier and crash mechanic work, what the 96.55% RTP means, and how Cricket, Goal and Vortex use the same engine."
         path="/aviator"
+        howToSteps={aviatorSteps}
       />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Aviator', path: '/aviator' }]} />
       <PageHero

@@ -125,6 +125,30 @@ export function articleSchema({
   };
 }
 
+export type HowToStepInput = { title: string; body: string } | string;
+
+export function howToSchema({
+  name,
+  description,
+  steps,
+}: {
+  name: string;
+  description: string;
+  steps: HowToStepInput[];
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name,
+    description,
+    step: steps.map((step, index) =>
+      typeof step === 'string'
+        ? { '@type': 'HowToStep', position: index + 1, text: step }
+        : { '@type': 'HowToStep', position: index + 1, name: step.title, text: step.body }
+    ),
+  };
+}
+
 export function breadcrumbSchema(items: BreadcrumbItem[]) {
   return {
     '@context': 'https://schema.org',

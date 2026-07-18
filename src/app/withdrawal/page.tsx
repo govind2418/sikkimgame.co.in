@@ -28,6 +28,7 @@ export default function WithdrawalPage() {
         title="Sikkim Game Withdrawal 2026 | Bonus & Customer Care Guide"
         description="A plain overview of how Sikkim Game withdrawals work: where to request one, typical processing time, and how to avoid withdrawal scams."
         path="/withdrawal"
+        howToSteps={withdrawalSteps}
       />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Withdrawal', path: '/withdrawal' }]} />
       <PageHero

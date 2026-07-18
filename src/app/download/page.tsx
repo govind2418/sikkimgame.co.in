@@ -31,6 +31,7 @@ export default function DownloadPage() {
         title="Sikkim Game Download 2026 | APK & Register Official Guide"
         description="Where to get Sikkim Game on Android or through your browser, plus links to our detailed install and APK safety guides."
         path="/download"
+        softwareApp
       />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Download', path: '/download' }]} />
       <PageHero

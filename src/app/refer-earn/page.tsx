@@ -28,6 +28,7 @@ export default function ReferEarnPage() {
         title="Sikkim Game Refer & Earn 2026 | Invite Code Official Guide"
         description="How Sikkim Game Refer & Earn works: finding your own referral code, sharing it, and when the reward is actually credited."
         path="/refer-earn"
+        howToSteps={referEarnSteps}
       />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Refer & Earn', path: '/refer-earn' }]} />
       <PageHero

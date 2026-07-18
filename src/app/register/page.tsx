@@ -29,6 +29,7 @@ export default function RegisterPage() {
         title="Sikkim Game Register 2026 | Login & Download Official Guide"
         description="Quick Sikkim Game sign-up overview: what you need, how invite codes fit in, and what to check before you register."
         path="/register"
+        howToSteps={registerSteps}
       />
       <Breadcrumb items={[{ name: 'Home', path: '/' }, { name: 'Register', path: '/register' }]} />
       <PageHero
