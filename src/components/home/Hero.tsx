@@ -15,9 +15,12 @@ export function Hero() {
             Sikkim Game Login, Register &amp; Download Guide (2026)
           </h1>
           <p className="mt-5 max-w-xl text-lg text-slate-300">
-            One clean stop for Sikkim Game Login, Sikkim Game Register, APK download, bonus
-            codes and invite codes, plus honest explainers on how Wingo and Colour Prediction
-            rounds actually work — written before you open the official app, not after.
+            This is the complete Sikkim Game Login page — everything you need for Sikkim Game
+            Login, Sikkim Game Register, Sikkim Game Download and the Sikkim Game APK in one
+            place. Sign in without the usual errors, create an account in under a minute, grab
+            the verified APK safely, and read honest explainers on how Wingo and Colour
+            Prediction rounds actually work — all written before you open the official app, not
+            after.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <CtaButton href={SITE.registerUrl} size="lg">Create Account</CtaButton>
