@@ -18,7 +18,7 @@ import { relatedTo } from '@/lib/pages';
 import { homeFaqs } from '@/lib/content/home';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Sikkim Game 2026 | Login, Register & Download Guide',
+  title: 'Sikkim Game Login (2026) | Register, APK Download & Bonus Guide',
   description:
     'Sikkim Game: independent sign-in and sign-up help, APK setup, bonus/invite/gift code guides, and plain-English Wingo & Colour Prediction breakdowns.',
   path: '/',
@@ -29,7 +29,7 @@ export default function HomePage() {
   return (
     <>
       <PageSchema
-        title="Sikkim Game 2026 | Login, Register & Download Guide"
+        title="Sikkim Game Login (2026) | Register, APK Download & Bonus Guide"
         description="Sikkim Game: independent sign-in and sign-up help, APK setup, bonus/invite/gift code guides, and plain-English Wingo & Colour Prediction breakdowns."
         path="/"
       />
