@@ -14,7 +14,9 @@ import { LoginIcon, ShieldIcon } from '@/components/icons';
 import { loginFaqs, loginSteps } from '@/lib/content/login';
 import { SITE } from '@/lib/site';
 import { ScreenshotCard } from '@/components/ui/ScreenshotCard';
+import { IPhoneMockup } from '@/components/ui/IPhoneMockup';
 import accountImg from '../../../public/images/screenshots/sikkim-game-account.png';
+import loginScreenImg from '../../../public/images/app-preview/login-screen.png';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Sikkim Game Login 2026 | Register & Download Official Guide',
@@ -41,6 +43,19 @@ export default function LoginPage() {
       />
 
       <Section>
+        <div className="grid gap-10 lg:grid-cols-[220px_1fr] lg:items-center">
+          <IPhoneMockup src={loginScreenImg} alt="Sikkim Game login screen" caption="Sikkim Game login" />
+          <p className="text-sm leading-relaxed text-slate-300">
+            The Sikkim Game login screen keeps things minimal — a phone number or email tab, a
+            password field with a show/hide toggle, and a Remember Password switch. Miss your
+            password and the same screen points you straight to customer service rather than a
+            generic &quot;forgot password&quot; flow. The Register link sits right underneath for anyone
+            who lands here without an account yet.
+          </p>
+        </div>
+      </Section>
+
+      <Section className="border-t border-white/5 bg-navy-900/40">
         <SectionHeading eyebrow="Four steps" title="Signing in correctly" />
         <div className="grid gap-5 sm:grid-cols-2">
           {loginSteps.map((step, index) => (
@@ -65,7 +80,7 @@ export default function LoginPage() {
         </div>
       </Section>
 
-      <Section className="border-t border-white/5 bg-navy-900/40">
+      <Section>
         <SectionHeading eyebrow="Stay secure" title="Two habits worth keeping" />
         <div className="grid gap-5 sm:grid-cols-2">
           <Card glass>

@@ -12,6 +12,8 @@ import { RelatedLinks } from '@/components/layout/RelatedLinks';
 import { relatedTo } from '@/lib/pages';
 import { HeadsetIcon, FileTextIcon, ShieldIcon } from '@/components/icons';
 import { customerCareFaqs } from '@/lib/content/customerCare';
+import { IPhoneMockup } from '@/components/ui/IPhoneMockup';
+import customerCareScreenImg from '../../../public/images/app-preview/customer-care-screen.png';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Sikkim Game Customer Care 2026 | Support & Withdrawal Guide',
@@ -76,7 +78,20 @@ export default function CustomerCarePage() {
         </div>
       </Section>
 
-      <Section id="faq" className="border-t border-white/5 bg-navy-900/40">
+      <Section className="border-t border-white/5 bg-navy-900/40">
+        <div className="grid gap-10 lg:grid-cols-[220px_1fr] lg:items-center">
+          <IPhoneMockup src={customerCareScreenImg} alt="Sikkim Game Self Service Center support screen" caption="Self Service Center" />
+          <p className="text-sm leading-relaxed text-slate-300">
+            The Self Service Center — hosted separately at sikkim365.com — handles the four
+            things people actually contact support for: changing your login password, retrieving
+            a lost login ID, reporting game problems, and reaching Online Service directly. A
+            Progress Query button at the bottom lets you check on a ticket you already submitted,
+            instead of starting the conversation over from scratch.
+          </p>
+        </div>
+      </Section>
+
+      <Section id="faq">
         <SectionHeading eyebrow="FAQs" title="Customer care questions, answered" />
         <FaqAccordion items={customerCareFaqs} />
       </Section>

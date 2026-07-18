@@ -13,6 +13,8 @@ import { relatedTo } from '@/lib/pages';
 import { UserPlusIcon, TicketIcon } from '@/components/icons';
 import { registerFaqs, registerSteps } from '@/lib/content/register';
 import { SITE } from '@/lib/site';
+import { IPhoneMockup } from '@/components/ui/IPhoneMockup';
+import registerScreenImg from '../../../public/images/app-preview/register-screen.png';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Sikkim Game Register 2026 | Login & Download Official Guide',
@@ -85,7 +87,21 @@ export default function RegisterPage() {
         </div>
       </Section>
 
-      <Section id="faq">
+      <Section>
+        <div className="grid gap-10 lg:grid-cols-[220px_1fr] lg:items-center">
+          <IPhoneMockup src={registerScreenImg} alt="Sikkim Game register screen with invite code field" caption="Sikkim Game register" />
+          <p className="text-sm leading-relaxed text-slate-300">
+            Sign-up asks for exactly four things: phone number (with the +91 country code
+            pre-selected), a password, a confirmation of that password, and an optional Invite
+            Code field — shown here pre-filled with a real referral code (757656108207) as an
+            example of the format. A Privacy Agreement checkbox has to be ticked before the
+            Register button activates, and an &quot;I have an account&quot; link sits underneath for
+            anyone who lands here by mistake.
+          </p>
+        </div>
+      </Section>
+
+      <Section id="faq" className="border-t border-white/5 bg-navy-900/40">
         <SectionHeading eyebrow="FAQs" title="Sign-up questions, answered" />
         <FaqAccordion items={registerFaqs} />
       </Section>
