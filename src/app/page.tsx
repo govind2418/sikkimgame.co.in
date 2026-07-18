@@ -3,6 +3,7 @@ import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { PageSchema } from '@/components/layout/PageSchema';
 import { Hero } from '@/components/home/Hero';
+import { TableOfContents } from '@/components/home/TableOfContents';
 import { StatsCounter } from '@/components/home/StatsCounter';
 import { QuickFacts } from '@/components/home/QuickFacts';
 import { Benefits } from '@/components/home/Benefits';
@@ -34,13 +35,14 @@ export default function HomePage() {
       />
       <Breadcrumb items={[{ name: 'Home', path: '/' }]} />
       <Hero />
+      <TableOfContents />
       <StatsCounter />
       <QuickFacts />
       <HowItWorks />
       <Benefits />
       <GamesShowcase />
       <Testimonials />
-      <Section id="faq">
+      <Section id="faq" className="scroll-mt-24">
         <SectionHeading
           eyebrow="Frequently asked questions"
           title="Quick answers before you start"
