@@ -20,7 +20,7 @@ import { homeFaqs } from '@/lib/content/home';
 export const metadata: Metadata = buildMetadata({
   title: 'Sikkim Game Login (2026) | Register, APK Download & Bonus Guide',
   description:
-    'Sikkim Game: independent sign-in and sign-up help, APK setup, bonus/invite/gift code guides, and plain-English Wingo & Colour Prediction breakdowns.',
+    'Sikkim Game Login, Register, APK Download, Bonus and Invite Code guides — independent, plain-English help plus Wingo & Colour Prediction breakdowns.',
   path: '/',
   keywords: ['Sikkim Game Login', 'Sikkim Game Register', 'Sikkim Game Download'],
 });
@@ -30,8 +30,17 @@ export default function HomePage() {
     <>
       <PageSchema
         title="Sikkim Game Login (2026) | Register, APK Download & Bonus Guide"
-        description="Sikkim Game: independent sign-in and sign-up help, APK setup, bonus/invite/gift code guides, and plain-English Wingo & Colour Prediction breakdowns."
+        description="Sikkim Game Login, Register, APK Download, Bonus and Invite Code guides — independent, plain-English help plus Wingo & Colour Prediction breakdowns."
         path="/"
+        itemList={[
+          { name: 'Sikkim Game Login', path: '/login' },
+          { name: 'Sikkim Game Register', path: '/register' },
+          { name: 'Sikkim Game Download & APK', path: '/download' },
+          { name: 'Sikkim Game Bonus', path: '/bonus' },
+          { name: 'Sikkim Game Invite Code', path: '/invite-code' },
+          { name: 'Sikkim Game Wingo', path: '/wingo' },
+          { name: 'Sikkim Game Colour Prediction', path: '/colour-prediction' },
+        ]}
       />
       <Breadcrumb items={[{ name: 'Home', path: '/' }]} />
       <Hero />

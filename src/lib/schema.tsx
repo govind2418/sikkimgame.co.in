@@ -125,6 +125,26 @@ export function articleSchema({
   };
 }
 
+export function itemListSchema({
+  name,
+  items,
+}: {
+  name: string;
+  items: { name: string; path: string }[];
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name,
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      url: `${SITE.url}${item.path}`,
+    })),
+  };
+}
+
 export type HowToStepInput = { title: string; body: string } | string;
 
 export function howToSchema({
