@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
@@ -13,6 +14,7 @@ import { RelatedLinks } from '@/components/layout/RelatedLinks';
 import { relatedTo } from '@/lib/pages';
 import { ShieldIcon, AlertTriangleIcon } from '@/components/icons';
 import { colourPredictionFaqs, colourPredictionPayouts } from '@/lib/content/colourPrediction';
+import colourPredictionBanner from '../../../public/images/promo/colour-prediction-campaign-banner.jpg';
 
 export const metadata: Metadata = buildMetadata({
   title: 'Sikkim Game Colour Prediction 2026 | Rules & Payout Guide',
@@ -41,6 +43,23 @@ export default function ColourPredictionPage() {
         title="Sikkim Game Colour Prediction, without the sales pitch"
         intro="One of the most-searched Sikkim Game modes, broken down honestly — including the parts the scam pages won't tell you about Sikkim Game Colour Prediction."
       />
+
+      <div className="mx-auto max-w-6xl px-4 pt-10 sm:px-6">
+        <div className="overflow-hidden rounded-3xl border border-amber-400/30 shadow-[0_0_0_1px_rgba(251,191,36,0.12),0_0_44px_-10px_rgba(251,191,36,0.4)]">
+          <Image
+            src={colourPredictionBanner}
+            alt="Sikkim Game Colour Prediction promotional campaign banner"
+            className="h-auto w-full"
+            placeholder="blur"
+            priority
+          />
+        </div>
+        <p className="mt-4 text-xs leading-relaxed text-slate-400">
+          This is the platform&apos;s own promotional artwork for Colour Prediction — the mode
+          it markets hardest, alongside a 24x7 support line. Treat it as marketing, not a claim
+          about your odds; the actual mechanics are covered in plain terms below.
+        </p>
+      </div>
 
       <Section>
         <div className="grid gap-10 lg:grid-cols-[1fr_280px] lg:items-start">

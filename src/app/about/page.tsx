@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
@@ -12,6 +13,7 @@ import { relatedTo } from '@/lib/pages';
 import { ShieldIcon, ZapIcon, UsersIcon } from '@/components/icons';
 import { aboutFaqs } from '@/lib/content/about';
 import { DISCLAIMER } from '@/lib/site';
+import brandMascotImg from '../../../public/images/promo/brand-mascot-campaign-portrait.jpg';
 
 export const metadata: Metadata = buildMetadata({
   title: 'About Sikkim Game 2026 | Independent Guide Hub',
@@ -37,19 +39,38 @@ export default function AboutPage() {
       />
 
       <Section>
-        <div className="space-y-5 text-sm leading-relaxed text-slate-300 max-w-3xl">
-          <p>
-            sikkimgame.co.in gathers the exact things players search for in one fast-loading
-            place: signing in, creating an account, getting the app safely, understanding bonus
-            and invite codes, and reading Wingo or Colour Prediction rules without the sales
-            pitch that usually comes with them.
-          </p>
-          <p>
-            This site is independent and unofficial. We don&apos;t develop or operate the game, we
-            never touch registrations, deposits or withdrawals, and we have no affiliation with
-            the Government of Sikkim or any state authority — the name simply reflects how
-            players refer to this game category.
-          </p>
+        <div className="grid gap-10 lg:grid-cols-[240px_1fr] lg:items-start">
+          <div className="mx-auto w-full max-w-[240px] overflow-hidden rounded-3xl border border-amber-400/30 shadow-[0_0_0_1px_rgba(251,191,36,0.12),0_0_44px_-10px_rgba(251,191,36,0.4)]">
+            <Image
+              src={brandMascotImg}
+              alt="Sikkim Game brand mascot campaign artwork"
+              className="h-auto w-full"
+              placeholder="blur"
+            />
+            <p className="border-t border-amber-400/20 bg-navy-900/60 px-4 py-2.5 text-center text-[11px] font-medium uppercase tracking-wide text-amber-300/90">
+              Brand campaign artwork
+            </p>
+          </div>
+          <div className="space-y-5 text-sm leading-relaxed text-slate-300 max-w-3xl">
+            <p>
+              sikkimgame.co.in gathers the exact things players search for in one fast-loading
+              place: signing in, creating an account, getting the app safely, understanding bonus
+              and invite codes, and reading Wingo or Colour Prediction rules without the sales
+              pitch that usually comes with them.
+            </p>
+            <p>
+              This site is independent and unofficial. We don&apos;t develop or operate the game, we
+              never touch registrations, deposits or withdrawals, and we have no affiliation with
+              the Government of Sikkim or any state authority — the name simply reflects how
+              players refer to this game category.
+            </p>
+            <p>
+              The mountain-and-torch figure on the left is the platform&apos;s own mascot artwork,
+              used across its marketing — not something we designed or endorse. We show it here
+              purely so the name and imagery are recognisable, the same way the rest of this page
+              is upfront about what we are and are not.
+            </p>
+          </div>
         </div>
 
         <div className="mt-10 grid gap-5 sm:grid-cols-3">
